@@ -1095,7 +1095,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 1、在github上创建项目
 
-2、使用git clone https://github.com/zwnong/learn_python.git克隆到本地
+2、使用git clone https://github.com/zwnong/Learnning-Python.git克隆到本地
 
 3、编辑项目
 
