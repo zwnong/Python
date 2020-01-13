@@ -1,0 +1,1427 @@
+
+--------------------------记事本--------------------------
+|                                                         |
+|                       日常学习记录                      |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+
+www.wowotech.net   wowotech科技     么么么么么么
+
+
+
+***************   DTMF  （双音多频）
+	通话中 按键
+	是一种在语音信道用音调来表示数字的方法  可以用来模拟话音信道传输信令 
+	高群四个音  低群四个音  类（嘟滴答）  
+
+运营商不支持混合VOLTE视频通话
+
+*******************ESRVCC（Single Radio Voice Call Continuity）
+发生 ESRVCC==中断volte
+是3GPP提出的一种VoLTE语音业务连续性方案，主要是为了解决当单射频UE 在LTE/Pre-LTE 网络
+和2G/3G CS 网络之间移动时，如何保证语音呼叫连续性的问题，即保证单射频UE 
+在IMS 控制的VoIP 语音和CS 域语音之间的平滑切换。
+
+2019/11/7
+1移动3g案例  暂无移动3g网络
+2物联卡、呼叫限制卡、移动会议卡案例、暂无测试卡
+3三个运营商vilte互通案例，运营商不支持互通
+4支持联通vilte 三星、MTK平台案例，暂无支持联通vilte三星、MTK平台手机
+
+ 
+ 
+--------------------------ADB-----------------------------
+|                                                         |
+|                       adb小结                           |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+ 
+adb devices
+adb shell screenrecord --time-limit 100
+fastboot模式:adb reboot bootloader
+ 
+
+----------------------------BAT---------------------------
+|                                                         |
+|                          bat小结                        |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+
+ping 127.0.0.1 -n 5000>nul 延迟五分钟后执行下一条命令
+
+
+
+连接特定的 DNS 后缀: meizu.com
+描述: Intel(R) Ethernet Connection I217-LM
+物理地址: ?64-00-6A-76-D7-AB
+已启用 DHCP: 是
+IPv4 地址: 172.16.141.84
+IPv4 子网掩码: 255.255.254.0
+获得租约的时间: 2019年11月13日 18:33:08
+租约过期的时间: 2019年11月20日 17:33:58
+IPv4 默认网关: 172.16.140.1
+IPv4 DHCP 服务器: 172.16.1.199
+IPv4 DNS 服务器: 172.16.80.104, 172.16.80.105
+IPv4 WINS 服务器: 172.16.1.122, 172.16.1.121
+已启用 NetBIOS over Tcpip: 是
+连接-本地 IPv6 地址: fe80::90b8:325f:e0c0:d0c4%11
+IPv6 默认网关: 
+IPv6 DNS 服务器: 
+
+
+
+PLMN
+Public Land Mobile Network -- 公共陆地移动(通信)网络 
+
+在某个国家或地区，某个运营商的某种制式的蜂窝移动通信网络被称为PLMN。PLMN由政府或它所批准的经营者，
+为公众提供陆地移动通信业务目的而建立和经营的网络。该网络可以与PSTN(Public Swithed Telephone Network，
+公共交换电话网络)等其他通信网络互联互通，形成整个地区或国家规模的通信网。
+
+在中国大陆地区，目前共有3张PLMN。即：
+·中国移动的GSM/GPRS/EDGE网络
+·中国联通的GSM/GPRS网络
+·中国联通的CDMA-1X网络
+
+ 所谓的IP呼叫前缀通俗理解就是用户打长途电话时需要在呼叫号码前加拨的前缀号码,按照电信运营商以往规则,加拨IP呼叫前缀可以拥有一定的优惠额度。
+电信运营商的IP呼叫前缀列举 1、中国移动:17951、12593; 2、中国联通:17911; 3、中国电信:17900...
+IP呼叫前缀目前的存在形势 以往用户拨打长途电话的成本比较高,电信运营商会设置不同的IP
+
+
+PATH=C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technol
+CE\Core-Static;D:\Android\sdk\tools;D:\Android\sdk\platform-tools;D:\Program Files\nodejs\;D:\Android\jdk\bin;D:\Android\jdk\jre\bin;D:\And
+b;C:\Program Files (x86)\Qualcomm\QIKTool\1.0.85.1;C:\Program Files (x86)\Qualcomm\QXDM4;D:\Python\Scripts\;D:\Python\;C:\Users\v-nongzhong
+\Roaming\npm
+
+*******************************************************************
+进入fastboot——输入fastboot flash modem + modem路径——fastboot reboot
+
+(1)进入fastboot: 在关机的状态下按  音量下键 + 电源键
+(2)输入fastboot flash modem  ：在手机与电脑连接之后，在cmd中输入fastboot flash modem  + NON-HLOS.bin       
+(3)接着2 fastboot reboot ：在cmd中再次输入fastboot reboot即可
+
+WAP PUSH是一种特殊格式的短信，而WAP就像互联网, 是一个内容丰富的网络, 用户如何找到自己喜欢的网站, 如何在网站中找到自己喜欢的
+业务, 往往需要很长时间。
+WAP PUSH 可以通过短信将链接到网站或企业, 到支持 WAP PUSH 功能的手机, 所以你只需要阅读这条短信 (服务信息), 打开短信中的链接,
+ 就可以直接访问企业。
+
+
+
+双清---->  清除data 和 cache  相当于恢复出厂设置
+   
+
+	linux分区特点：
+	root分区：  根分区
+	data分区：  用于存储用户安装的app数据，  apk安装后所需要的文件都在这里
+	dalvik cache:  安卓运用的是虚拟机制，先把软件放置在虚拟机中二次编码后才能给运行
+	Ceche分区：  存储应用系统数据
+	system分区：  整个系统
+	user data分区：  用户数据分区，相当于内存卡
+
+/////////////////////////////////////
+	                                 ///
+	留言录音：需开通语音信箱         //////////////////////////////
+	
+	MTK平台可以听到双方DTMF声；                                  ///
+三星与高通平台只听得到自己的DTMF声音，听不到对端的（暂未实现功能）//
+    
+///////////////////////////////////////////////////////////////////
+
+清除ddr数据 fastboot erase mdmddr
+
+      移动         联通        电信
+2G    GSM          GSM         CDMA 1X
+
+3G    TD-SCDMA     WCDMA       CDMA2000
+
+4G    TDD-LTE      TDD-LTE     TDD-LTE
+                   FDD-LTE     TDD-LTE
+	
+	FDD:频分双工。单车道，不同时间允许走不同的方向
+	TDD：双车道，一个车道只能走一个方向，双向互不干扰。
+
+
+-------------------------Appium---------------------------
+|                                                         |
+|                       API小结                           |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv                                                                     
+
+函数：find_element_by_android_uiautomator
+参数：uia_string
+描述：通过元素名称查找一个android元素
+用法：driver.find_element_by_android_uiautomator('.elements()[1].cells()[2]')
+
+函数：find_elements_by_android_uiautomator
+参数：uia_string
+描述：通过元素名称查找N个android元素
+用法：driver.find_elements_by_android_uiautomator('.elements()[1].cells()[2]')
+
+函数：find_element_by_accessibility_id 参数：id
+描述：通过元素accessibility id查找一个元素
+用法：driver.find_element_by_accessibility_id()
+
+函数：find_elements_by_accessibility_id
+参数：id
+描述：通过元素accessibility id查找N个元素
+用法：driver.find_elements_by_accessibility_id()
+
+函数：create_web_element
+参数：element_id
+描述：使用指定的element id创建一个web元素
+
+函数：scroll
+参数：origin_el, destination_el
+描述：从一个元素位置滚动到另一个元素位置
+用法：driver.scroll(el1, el2)
+
+函数：drag_and_drop
+参数：origin_el, destination_el
+描述：将一个元素从一个位置拖曳到另外一个位置
+用法：driver.drag_and_drop(origin_el, destination_el)
+
+函数：tap
+参数：positions, duration
+描述：点击屏幕指定位置，并在该位置停留duration指定的时长
+用法：driver.tap([(100, 20), (100, 60), (100, 100)], 500)
+
+函数：swipe
+参数：start_x, start_y, end_x, end_y, duration=None
+描述：从一个位置到另外一个位置滑动屏幕
+用法：driver.swipe(100, 100, 100, 400)
+
+函数：flick
+参数：start_x, start_y, end_x, end_y
+描述：从一个位置到另外一个位置快速滑动
+用法：driver.flick(100, 100, 100, 400)
+
+函数：pinch
+参数：element=None, percent=200, steps=50
+描述：捏
+用法：driver.pinch(element)
+
+函数：zoom
+参数：element=None, percent=200, steps=50
+描述：缩放屏幕
+用法：driver.zoom(element)
+
+函数：app_strings
+参数：language=None, string_file=None
+描述：获取应用字符串
+
+函数：reset
+参数：无
+描述：重置设备当前的app
+用法：driver.reset()
+
+函数：hide_keyboard
+参数：key_name=None, key=None, strategy=None
+描述：隐藏键盘
+
+函数：current_activity
+参数：无
+描述：获取设备当前app的activity
+用法：driver.current_activity
+
+函数：current_package
+参数：无
+描述：获取设备当前运行app的package
+用法：driver.current_package
+
+函数：set_value
+参数：element, value
+描述：给指定元素设置值
+用法：driver.set_value(element, value)
+
+函数：pull_file
+参数：path
+描述：从设备拉取文件
+用法：driver.pull_file(path)
+
+函数：push_file
+参数：path, base64data
+描述：以Base64编码方式向设备推送文件
+用法：driver.push_file(path, base64data)
+
+函数：background_app
+参数：seconds
+描述：将指定的app放在后端运行一段时间
+用法：driver.background_app(seconds)
+
+函数：is_app_installed
+参数：bundle_id
+描述：根据bundle id判断app是否已经安装
+用法：driver.is_app_installed(bundle_id)
+
+函数：install_app
+参数：app_path
+描述：安装app到设备
+用法：driver.install_app(app_path)
+
+函数：remove_app
+参数：app_id
+描述：卸载指定的app
+用法：driver.remove_app(app_id)
+
+函数：launch_app
+参数：无
+描述：启动desired capabilities指定的app
+用法：driver.launch_app
+
+函数：close_app
+参数：无
+描述：停止desired capabilities指定的app
+用法：driver.close_app()
+
+函数：start_activity
+参数：app_package, app_activity, **opts
+描述：启动指定参数的app, android专用
+
+函数：lock
+参数：seconds
+描述：锁屏一段时间，ios专用
+用法：driver.lock(5)
+
+函数：shake
+参数：无
+描述：摇动设备
+用法：driver.shake()
+
+函数：open_notifications
+参数：无
+描述：打开通知，android专用，要求API level 18及以上
+用法：driver.open_notifications()
+
+函数：get_settings
+参数：无
+描述：获取当前appium服务端的设置
+用法：driver.get_settings
+
+函数：update_settings
+参数：settings
+描述：重设当前会话的设置,请参见 https://github.com/appium/appium/blob/master/docs/en/advanced-concepts/settings.md
+
+函数：device_time
+参数：无
+描述：返回设备的日期时间
+用法: driver.device_time
+
+                                                     元素操作
+
+二、元素定位
+ 
+1.格式：find_element_by_定位方式(value)
+ 
+通过id定位
+（取resource-id的值）：
+driver.find_element_by_id("com.wuba.zhuanzhuan:id/azo")
+也可以直接用id后面的内容driver.find_element_by_id("azo")
+ 
+通过class_name定位
+（取class的内容）
+driver.find_element_by_class_name("android.widget.RelativeLayout")
+ 
+通过xpath定位
+（取xpath得内容）
+driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.XXX")
+ 
+通过text定位
+（需要使用uiautomator的定位方式，使用text的内容）
+driver.find_elements_by_android_uiautomator("new UiSelector().text(\"+关注\")")
+ 
+使用这里需要注意一下，通过text定位的结果是个list，不能直接click。所以如果要点击需要取数组的值，比如下面是点击找到的第一个元素
+driver.find_elements_by_android_uiautomator("new UiSelector().text(\"+关注\")")[0].click()
+ 
+通过css_selector定位（webview）
+只适用于webview的html页面，继承自webdriver，与pc版本的UI测试一致
+driver.find_element_by_css_selector()
+ 
+通过link_text定位（webview）
+只适用于webview容器中的html页面，继承自webdriver，与pc版本的UI测试一致
+driver.find_element_by_link_text()
+ 
+通过name定位
+web view容器中的html页面可以用name定位，native并没有name属性
+driver.find_element_by_name()
+  
+2.定位元素的另一种写法：find_element(by,value)
+find_element_by_方式(value)实际调用的都是find_element(by,value)
+需要导入这个包：from selenium.webdriver.common.by import By
+ 
+例如：定位id为ag2的元素
+方式一：driver.find_element_by_id("ag2”)
+方式二：driver.find_element(By.ID,"ag2")
+ 
+这个操作的好处是可以直接把操作的by和value放到一个元组里，然后调用通用方法来传参获得元素结果
+cateid=(By.ID,"ag2")
+driver.find_element(*cateid).click()
+ 
+by的操作可以是：
+By.ID   相当于by_id
+By.CLASS_NAME  相当于by_class_name
+By.XPATH   相当于by_xpath
+By.NAME   相当于by_name
+By.TAG_NAME   相当于by_tag_name
+By.CSS_SELECTOR  相当于by_css_selector
+By.LINK_TEXT  相当于by_link_text
+ 
+ 
+3.find_elements_by_定位方式(value)返回元素数组
+用法与find_element_by_方式(value)一致，但是返回一个数组。可以通过数组的索引来访问具体的某个结果
+ 
+例如：通过class_name定位到多个元素，我想点击第一个元素
+driver.find_elements_by_class_name("android.widget.RelativeLayout”)[0].click()
+ 
+4.返回元素数组的另一种写法：find_elements(by,value)
+用法与find_element(by,value)一致，但是返回一个数组。可以通过数组的索引来访问具体的某个结果
+ 
+例如：通过class_name定位到多个元素，我想点击第一个元素
+driver.find_elements(By.CLASS_NAME,"android.widget.RelativeLayout”)[0].click()
+ 
+5.通过元素定位元素
+可以先找到某个元素，然后再进一步定位元素
+find_element_by_class_xpath(“xxx”).find_element_by_name(“yyy")
+ 
+ 
+三、元素操作
+ 
+找到元素后可以对元素进行的操作，例如上面讲的进一步定位元素
+ 
+1.click()
+//点击操作
+也可以用tab实现点击操作
+driver.find_element_by_id("com.wuba.zhuanzhuan:id/ae8").click()
+ 
+2.clear()
+//清空输入框内容
+driver.find_element_by_id("com.wuba.zhuanzhuan:id/ij").clear()
+ 
+3.send(xx)
+//输入框内输入内容
+driver.find_element_by_id("com.wuba.zhuanzhuan:id/ij").send_keys("test content")
+ 
+4.text
+//获得元素的text内容
+print(driver.find_element_by_xpath(" //android.widget.LinearLayout[1]//xxx").text)
+ 
+ 
+四、触摸操作
+ 
+1.driver.tap([坐标]，持续点击时间)
+除了定位到元素的点击外，也可以通过tab实现坐标的点击
+driver.tap(driver.tap([(216,1776)],2))
+ 
+2.TouchAction(driver)
+TouchAction对象包含（tab）、press（短按）、move_to（滑动到某个坐标）等方法
+ 
+通过TouchAction对象，添加tap、move_to等操作，然后perform()执行，可以实现解锁屏幕等功能
+ 
+规范中的可用事件有：
+ * 短按 (press)
+ * 释放 (release)
+ * 移动到 (moveTo)
+ * 点击 (tap)
+ * 等待 (wait)
+ * 长按 (longPress)
+ * 取消 (cancel)
+ * 执行 (perform)
+ 
+ 例如：一个多次滑屏的例子：
+action=TouchAction(driver)
+action.press(x=220,y=700).move_to(x=840, y=700).move_to(x=220, y=1530).move_to(x=840, y=1530).release().perform()
+可以通过wait()等待操作
+
+3.MultiAction()//多点触控
+通过MultiAction().add()添加多个TouchAction操作，最后调用perform()一起执行这些操作
+action0 = TouchAction().tap(el)
+action1 = TouchAction().tap(el)
+MultiAction().add(action0).add(action1).perform()
+ 
+4.driver.swipe(x1, y1, x2, y2,duration)  
+//从坐标(x1,x2)滑动到坐标(x2,y2)，duration非必填项，滑动时间
+（滑动的坐标不能超过屏幕的宽高）
+可以通过【driver.get_window_size()】命令获得窗口高和宽，结果为{'width': 1080, 'height': 1776}
+ 
+一个鼠标向上下左右活动的例子如下：
+#获得屏幕大小宽和高
+def getSize(driver):
+    x = driver.get_window_size()['width']
+    y = driver.get_window_size()['height']
+    return (x, y)
+
+#屏幕向上滑动
+def swipeUp(driver,t=1000):
+    l = getSize(driver)
+    x1 = int(l[0] * 0.5)    #x坐标
+    y1 = int(l[1] * 0.75)   #起始y坐标
+    y2 = int(l[1] * 0.25)   #终点y坐标
+    driver.swipe(x1, y1, x1, y2,t)
+
+#屏幕向下滑动
+def swipeDown(driver,t=1000):
+    l = getSize(driver)
+    x1 = int(l[0] * 0.5)  #x坐标
+    y1 = int(l[1] * 0.25)   #起始y坐标
+    y2 = int(l[1] * 0.75)   #终点y坐标
+    driver.swipe(x1, y1, x1, y2,t)
+#屏幕向左滑动
+def swipLeft(driver,t):
+    l=getSize(driver)
+    x1=int(l[0]*0.75)
+    y1=int(l[1]*0.5)
+    x2=int(l[0]*0.05)
+    driver.swipe(x1,y1,x2,y1,t)
+#屏幕向右滑动
+def swipRight(driver,t=1000):
+    l=getSize(driver)
+    x1=int(l[0]*0.05)
+    y1=int(l[1]*0.5)
+    x2=int(l[0]*0.75)
+    driver.swipe(x1,y1,x2,y1,t)
+ 
+#调用向下滑动的方法
+swipeDown(driver)
+
+五、系统按键事件
+ 
+ press_keycode(AndroidKeyCode)//发送按键事件
+例如：点击home键，home键的KeyCode是3
+driver.press_keycode(3)
+ 
+键名                  描述       键值
+KEYCODE_CALL        拨号键     5
+KEYCODE_ENDCALL     挂机键     6
+KEYCODE_HOME        按键Home      3
+KEYCODE_MENU        菜单键     82
+KEYCODE_BACK        返回键     4
+KEYCODE_SEARCH      搜索键     84
+KEYCODE_CAMERA      拍照键     27
+KEYCODE_FOCUS       拍照对焦键   80
+KEYCODE_POWER       电源键     26
+KEYCODE_NOTIFICATION 通知键        83
+KEYCODE_MUTE        话筒静音键   91
+KEYCODE_VOLUME_MUTE 扬声器静音键  164
+KEYCODE_VOLUME_UP   音量增加键   24
+KEYCODE_VOLUME_DOWN 音量减小键   25
+ 
+ 
+ 六、driver的一些比较重要操作
+ 
+1.reset()
+//重置app
+这时候driver会重置，相当于卸载重装应用。所以本地缓存会失效
+driver.reset()
+ 
+2.start_activity(包名,activity名)
+//启动app的某一个activity
+例如：driver.start_activity("com.wuba.zhuanzhuan","./presentation.view.activity.LaunchActivity")
+ 
+启动一个activity，这个activity必须是AndroidManifest.xml中有intent-filter的activity
+<intent-filter>
+    <action android:name="android.intent.action.MAIN"/>
+   <category android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+ 
+这种启动activity和driver的reset()不同的是
+ 
+3.contexts
+//获得所有contexts
+driver.contexts
+ 
+结果如下：
+['NATIVE_APP', 'WEBVIEW_com.android.browser']
+ 
+NATIVE_APP：native的context
+WEBVIEW_com.android.browser：webview的context，存放html的容器
+ 
+4.current_context
+//查看当前的context
+driver.current_context
+ 
+5.switch_to.context(context名)
+//切换context
+driver.switch_to.context("WEBVIEW_com.wuba.zhuanzhuan")
+ 
+NATIVE时不能定位WEBVIEW的内容，在WEBVIEW的context时不能定位NATIVE的内容。
+所以需要切换到对应的context中去进行操作
+ 
+6.setNetworkConnection(bitmask掩码)
+//设置网络类型
+例如：设置网络类型为只开wifi
+driver.set_network_connection(2)
+ 
+网络的bitmask掩码如下：
+| 值 (别名)           | 数据连接 | Wifi 连接 | 飞行模式 |
+| ------------------ | ---- | ---- | ------------- |
+| 0 (什么都没有)       | 0    | 0    | 0 |
+| 1 (飞行模式)         | 0    | 0    | 1 |
+| 2 (只有Wifi)         | 0    | 1    | 0 |
+| 4 (只有数据连接)     | 1    | 0    | 0 |
+| 6 (开启所有网络)     | 1    | 1    | 0 |
+
+7.scroll(起始元素，结束元素)
+driver.scroll(origin_el,destination_el)
+ 
+8.获得当前页面的所有元素
+driver.page_source
+ 
+这可以用来判断元素是否存在，例如（assert "发布成功" in driver.page_source）
+ 
+9.补充一些driver启动时可能用到的项
+其实这些在上一篇启动里都有介绍，但是有些可能大家没注意到的点再列一下。这些点也是我在测试中实际遇到的点
+ 
+autoLaunch ：Appium是否要自动启动或安装app，默认true
+desired_caps['autoLaunch'] = 'false'
+有的时候我不想让appium每次都启动app，想自己去启动activity，那这个项这时就可以起作用了
+ 
+noReset：在会话前是否重置app状态。默认是false
+desired_caps['noReset'] = 'true'
+ 
+newCommandTimeout：设置未接收到新命令的超时时间，默认60s
+如果60s内没有接收到新命令，appium会自动断开连接，如果我需要很长时间做driver之外的操作，可能延长接收新命令的超时时间
+desired_caps["newCommandTimeout"]=1800
+
+
+--------------------------python--------------------------
+|                                                         |
+|                       打包exe工具                       |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+
+Python 是一个脚本语言，被解释器解释执行。它的发布方式：
+
+.py 文件：对于开源项目或者源码没那么重要的，直接提供源码，需要使用者自行安装 Python 并且安装依赖的各种库。（Python 官方的各种安装包就是这样做的）。
+.pyc 文件：有些公司或个人因为机密或者各种原因，不愿意源码被运行者看到，可以使用 pyc 文件发布，pyc 文件是 Python 解释器可以识别的二进制码，故发布后也是跨平台的，需要使用者安装相应版本的 Python 和依赖库。
+可执行文件：对于非码农用户或者一些小白用户，你让他装个 Python 同时还要折腾一堆依赖库，那简直是个灾难。对于此类用户，最简单的方式就是提供一个可执行文件，只需要把用法告诉他即可。比较麻烦的是需要针对不同平台需要打包不同的可执行文件（Windows, Linux, Mac,…）。
+.py 和.pyc 都比较简单，Python 本身就可以搞定。将 Python 脚本打包成可执行文件有多种方式。
+
+PyInstaller
+安装 pyinstaller
+对于那些网络比较稳定，能够流畅使用 pip 源地址的用户，直接下面的命令就可以搞定：
+
+pip install pyinstaller
+ 
+
+通常我们会下载源码包，然后进入包目录，执行下面的命令（需要安装 setuptools）：
+
+python setup.py install
+ 
+
+安装完后，检查安装成功与否：
+
+pyinstaller --version
+ 
+
+安装成功后，就可以使用下面的命令了：
+
+pyinstaller : 打包可执行文件的主要命令，详细用法下面会介绍。
+pyi-archive_viewer : 查看可执行包里面的文件列表。
+pyi-bindepend : 查看可执行文件依赖的动态库（.so 或.dll 文件）
+pyi-… : 等等。
+
+使用 PyInstaller
+        pyinstaller 的语法：pyinstaller [options] script [script…] | specfile
+
+        最简单的用法，在和 myscript.py 同目录下执行命令：
+
+         pyinstaller mycript.py
+
+         然后会看到新增加了两个目录 build 和 dist，dist 下面的文件就是可以发布的可执行文件，对于上面的命令你会发现
+		 dist 目录下面有一堆文件，各种都动态库文件和 myscrip 可执行文件。有时这样感觉比较麻烦，需要打包 dist 下面的
+		 所有东西才能发布，万一丢掉一个动态库就无法运行了，好在 pyInstaller 支持单文件模式，只需要执行：
+
+        pyinstaller -F mycript.py
+
+        你会发现 dist 下面只有一个可执行文件，这个单文件就可以发布了，可以运行在你正在使用的操作系统类似的系统的下面。当然，pyinstaller 还有各种选项，有通用选项，如 -d 选项用于 debug。
+
+        在执行 pyInstaller 命令的时候，会在和脚本相同目录下，生成一个.spec 文件，该文件会告诉 pyinstaller 如何处理你
+		的所有脚本，同时包含了命令选项。一般我们不用去理会这个文件，若需要打包数据文件，或者给打包的二进制增加一些 
+		Python 的运行时选项时…一些高级打包选项时，需要手动编辑.spec 文件。可以使用：
+
+        pyi-makespec optionsscript [script …]
+
+        创建一个.spec 文件，对于手动编辑的.spec 文件，我们可以使用下面任意一条命令：
+
+        pyinstaller specfile
+
+        pyi-build specfile
+
+PyInstaller 原理简介
+        PyInstaller 其实就是把 python 解析器和你自己的脚本打包成一个可执行的文件，和编译成真正的机器码完全是两回事，
+		所以千万不要指望成打包成一个可执行文件会提高运行效率，相反可能会降低运行效率，好处就是在运行者的机器上不用安
+		装 python 和你的脚本依赖的库。在 Linux 操作系统下，它主要用的 binutil 工具包里面的 ldd 和 objdump 命令。
+
+        PyInstaller 输入你指定的的脚本，首先分析脚本所依赖的其他脚本，然后去查找，复制，把所有相关的脚本收集起来，
+		包括 Python 解析器，然后把这些文件放在一个目录下，或者打包进一个可执行文件里面。
+
+        可以直接发布输出的整个文件夹里面的文件，或者生成的可执行文件。你只需要告诉用户，你的应用 App 是自我包含的，
+		不需要安装其他包，或某个版本的 Python，就可以直接运行了。
+
+        需要注意的是，PyInstaller 打包的执行文件，只能在和打包机器系统同样的环境下。也就是说，不具备可移植性，若需
+		要在不同系统上运行，就必须针对该平台进行打包。
+
+实践问题
+        pyinstaller 打包后的 exe 运行怎么去掉弹出的命令行提示窗口？
+
+        1. 如果使用.spec 文件的话, 在该文件中找到 console=True 修改为 console=False
+
+        2. 如果是直接指定 python 文件进行 pyinstaller 打包的话，需要添加—noconsole
+
+        pyinstaller path\mycode.py–noconsole
+
+        如果想只打包成一个 exe：
+
+        pyinstaller -F path\mycode.py –noconsole（注意：noconsole前面必须是两个  -  -，一个 - 不起作用）
+
+       或：
+
+        pyinstaller -F -wpath\mycode.py
+
+        更换最终 exe 生成路径
+
+        在 cmd 中，一开始就要 cd D:\PythonEXE\ 切换到输出文件夹，然后在用上面的代码，说明：各个参数的作用，
+
+        例子：pyinstaller -F -w -pD:\tmp\core-python\libs -i d:\tmp\main.ico main.py
+
+        -F 表示生成单个可执行文件；
+
+        -D  –onedir 创建一个目录，包含 exe 文件，但会依赖很多文件（默认选项）。
+
+        -w 表示去掉控制台窗口，这在 GUI 界面时非常有用。不过如果是命令行程序的话那就把这个选项删除吧！；
+
+        -c  –console, –nowindowed 使用控制台，无界面 (默认)；
+
+        -p 表示你自己自定义需要加载的类路径，一般情况下用不到；
+
+        -i 表示可执行文件的图标。
+
+
+
+填充手机内存：adb shell dd if=/dev/zero of=sdcard/AA bs=1024000 count=1024
+                        修改count大小的值，1G=1024，要填充多少自己计算
+
+
+运行内存：系统有最小内存保护阈值，内存达到阈值之后系统会不断的GC释放内存
+
+1G =10241
+
+499216
+----------------------*****************性能（内存*************---------------------------
+
+largeHeap项检查     large== 巨大的  heap==堆
+查看是否为false，  adb shell dempsys meninfo packagName  
+
+1
+、首先， Android 程序运行时会启动一个 dalivk 虚拟机，而虚拟机的运行时内存
+一般由堆和栈两大部分构成， largeHeap 是限制每个应用申请的最大内堆存值。
+2
+、若应用使用了 largeHeap 则会请求系统为 Dalvik 虚拟机分配更大的内存空间，
+这样就比标准应用申请了更多的内存空间。
+3
+、一个设备的内存是固定的，当我们使用了 largeHeap 之后就可以使我们的程序
+内存增加，但这部分增加的内存有可能是源自被系统杀掉的后台程序。所以，使
+用 largeHeap 理论上是有可能杀掉其他的程 序的。但它不需要权限，在
+menifest.xml 中设置 Application 的该属性即可。
+
+eg:
+
+1 、 这个 属性 在 拿到测试机后，首先确认是否有，没有的话，请 联系 性能开发
+加入。（ 例如 M18 X2 项目上开始是没有该属性的）
+
+2 、 已知问题有图库、地图、游戏中心三个模块，均已申请不解决，不再重复
+提交 bug 。
+2-1
+、图库模块由于有多个场景需要，需要开启 largeHeap #441567
+2-2
+、地图功能复杂， 需要占用比较高的系统资源，申请开启 largeHeap
+#675342
+3 、游戏中心由于使用直播，申请 largeheap --#554180
+
+====================***********海外组*************============
+
+
+USAT-USIM Application Toolkit, USIM应用工具箱。
+
+PSTN ，中文名称公共交换电话网络
+
+中国移动预置DM业务：
+增强售后服务，简称DM。定义为：中国移动推出的为用户提供终端远程参数设置和软件版本升级的一项服务。
+使用于中国移动各品牌不含TD
+用户只要使用具有增强售后服务功能的手机，无需定购，即可使用增强售后服务。
+DM业务不向用户收取通信费和信息费。如果处在国际及港澳台漫游状态，按照现行资费标准计收GPRS流量费。
+你可以拨打10086，提供需要配置的移动电话号码及手机厂商，手机型号。只要你的手机支持，他们就就会给你发。
+
+NFC:
+NFC即近场通信（Near Field Communication），是一种短距离的高频无线通信技术，
+使用NFC技术的设备（如手机）可以在彼此靠近的情况下进行数据交换。
+这种新兴技术由非接触式射频识别（RFID）及互连互通技术整合演变而来。
+它通过在单一芯片上集成感应式读卡器、感应式卡片和点对点通信的功能，
+利用移动终端实现移动支付、电子票务、门禁、移动身份识别、防伪等应用。
+
+pyinstaller --onefile --windowed --icon="路径" app.py
+pip --default-timeout=100 install 
+
+
+18377183873
+
+adb shell am start -n com.meizu.telephonyengineermode/com.meizu.telephonyengineermode.TelephonyEngineerMode 
+
+adb shell setenforce 0
+
+10.57.224.118
+
+辉杰wifi账号密码：
+t-v-lianghuijie@meizu.com  
+密码：meili@66
+
+联通votle
+发送--->DGVOTLE（开通），TDVOTLE（关闭） 到10010
+
+locadLibrary:找不到指定的模块
+
+
+
+
+--------------------------Uiautomator2 ------------------------
+|                                                              |
+|                                                              |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+二、uiautomatorviewer解决方法
+
+1.截取uix文件
+adb shell uiautomator dump /sdcard/sc.uix
+adb pull /sdcard/sc.uix
+
+注明：新手机地址改成：/data/local/tmp/**.uix
+2.截取截图
+adb shell screencap -p /sdcard/sc.png
+adb pull /sdcard/sc.png?
+3.打开sdk tools目录下的uiautomatorviewer.bat，导入li从机器获取的截图和资源文件
+
+------------------------------
+
+设备连接方法，有两种
+
+1. 通过WiFi，假设设备IP 192.168.5.4和您的PC在同一网络中
+
+import uiautomator2 as u2
+ 
+d = u2.connect('192.168.5.4') # alias for u2.connect_wifi('192.168.5.4')
+print(d.info)
+2. 通过USB， 假设设备序列是123456789F（见adb devices）
+
+import uiautomator2 as u2
+ 
+d = u2.connect('123456789F') # alias for u2.connect_usb('123456789F')
+print(d.info)
+检查并维持设备端守护进程处于运行状态
+
+d.healthcheck()
+连接本地USB设备
+
+需要设备曾经使用 python -m uiautomator2 init 初始化过
+
+d = u2.connect_usb("{Your-Device-Serial}")
+如何停用UiAutomator的守护程序?
+
+1. 直接打开uiautomator app（init成功后，就会安装上的），点击关闭UIAutomator
+
+2.  d.service("uiautomator").stop()
+
+打开调试开关
+
+>>> d.debug = True
+>>> d.info
+12:32:47.182 $ curl -X POST -d '{"jsonrpc": "2.0", "id": "b80d3a488580be1f3e9cb3e926175310", "method": "deviceInfo", "params": {}}' 'http://127.0.0.1:54179/jsonrpc/0'
+12:32:47.225 Response >>>
+{"jsonrpc":"2.0","id":"b80d3a488580be1f3e9cb3e926175310","result":{"currentPackageName":"com.android.mms","displayHeight":1920,"displayRotation":0,"displaySizeDpX":360,"displaySizeDpY":640,"displayWidth":1080,"productName"
+:"odin","screenOn":true,"sdkInt":25,"naturalOrientation":true}}
+<<< END
+安装应用，只能从URL安装
+d.app_install（' http://some-domain.com/some.apk '）
+安装应用
+
+d.app_start（“ com.example.hello_world ”）＃ start包名称
+停止应用
+
+＃相当于`am force-stop`，因此你可能丢失数据 
+d.app_stop（ “ com.example.hello_world ”） 
+＃相当于`pm clear` 
+d.app_clear（ ' com.example.hello_world '）
+推送和拉取文件
+
+把文件推送到设备
+# push to a folder
+d.push("foo.txt", "/sdcard/")
+# push and rename
+d.push("foo.txt", "/sdcard/bar.txt")
+# push fileobj
+with open("foo.txt", 'rb') as f:
+    d.push(f, "/sdcard/")
+# push and change file access mode
+d.push("foo.sh", "/data/local/tmp/", mode=0o755)
+从设备中提取文件
+d.pull("/sdcard/tmp.txt", "tmp.txt")
+ 
+# FileNotFoundError will raise if the file is not found on the device
+d.pull("/sdcard/some-file-not-exists.txt", "tmp.txt")
+跳过弹窗，禁止弹窗
+d.disable_popups（） ＃自动跳过弹出窗口 
+d.disable_popups（假）＃禁用自动跳过弹出窗口
+Session
+
+Session represent an app lifestyle. 可用于启动应用，检测应用崩溃
+
+启动应用
+sess = d.session（“ com.netease.cloudmusic ”）
+Attach to the running app
+sess = d.session（“ com.netease.cloudmusic ”，attach = True）
+检测应用崩溃
+# When app is still running
+sess(text="Music").click() # operation goes normal
+ 
+# If app crash or quit
+sess(text="Music").click() # raise SessionBrokenError
+# other function calls under session will raise SessionBrokenError too
+# check if session is ok.
+# Warning: function name may change in the future
+sess.running() # True or False
+检索设备信息
+
+获取基本信息
+d.info
+以下是可能的输出：
+
+{ 
+    u'displayRotation': 0,
+    u'displaySizeDpY': 640,
+    u'displaySizeDpX': 360,
+    u'currentPackageName': u'com.android.launcher',
+    u'productName': u'takju',
+    u'displayWidth': 720,
+    u'sdkInt': 18,
+    u'displayHeight': 1184,
+    u'naturalOrientation': True
+}
+获取窗口大小
+print(d.window_size())
+
+# device upright output example: (1080, 1920)
+# device horizontal output example: (1920, 1080)
+获取最新的应用信息。对于某些Android设备，输出可能为空
+print(d.current_app())
+
+获取设备序列号
+print(d.serial)
+# output example: 74aAEDR428Z9
+关键事件
+
+打开/关闭屏幕
+d.screen_on（）＃打开屏幕 
+d.screen_off（）＃关闭屏幕
+
+获取当前屏幕状态
+d.info.get（' screenOn '）＃ require Android> = 4.4
+
+Home / Back 按键操作
+d.press("home") 
+d.press("back")
+d.press(0x07, 0x02) 
+
+目前支持这些密钥名称：
+home
+back
+left
+right
+up
+down
+center
+menu
+search
+enter
+delete ( or del)
+recent (recent apps)
+volume_up
+volume_down
+volume_mute
+camera
+power
+ 
+
+解锁屏幕
+d.unlock()
+
+手势与设备的交互
+
+点击屏幕
+d.click（x，y）
+
+双击
+d.double_click（x，y）
+d.double_click（X，Y，0.1）＃默认之间的两个点击持续时间为0.1秒
+
+长按一下屏幕
+d.long_click（x，y）
+d.long_click（X，Y，0.5）＃长按0.5秒（默认）
+Swipe
+d.swipe(sx, sy, ex, ey)
+d.swipe(sx, sy, ex, ey, 0.5) 
+
+拖动
+d.drag(sx, sy, ex, ey)
+d.drag(sx, sy, ex, ey, 0.5) # Drag for 0.5s(default)
+
+滑动点   多用于九宫格解锁，提前获取到每个点的相对坐标（这里支持百分比）
+# swipe from point(x0, y0) to point(x1, y1) then to point(x2, y2)
+# time will speed 0.2s bwtween two points
+d.swipe((x0, y0), (x1, y1), (x2, y2), 0.2)
+注意：单击，滑动，拖动操作支持百分比位置值。例：
+
+d.long_click(0.5, 0.5) 表示长按屏幕中心
+
+屏幕相关的
+
+检索/设置设备方向     --可能的方向如下
+natural or n
+left or l
+right or r
+upsidedown or u (can not be set)
+
+# 检索方向。输出可以是 "natural" or "left" or "right" or "upsidedown"
+orientation = d.orientation
+ 
+# WARNING: not pass testing in my TT-M1
+# set orientation and freeze rotation.
+# notes: setting "upsidedown" requires Android>=4.3.
+d.set_orientation('l') # or "left"
+d.set_orientation("l") # or "left"
+d.set_orientation("r") # or "right"
+d.set_orientation("n") # or "natural"
+Freeze/Un-freeze rotation
+# freeze rotation
+d.freeze_rotation()
+# un-freeze rotation
+d.freeze_rotation(False)
+
+
+截图
+# 截取并保存到计算机上的文件，需要Android> = 4.2。
+d.screenshot("home.jpg")
+ 
+# 得到PIL.Image格式的图像. 但你必须先安装pillow
+image = d.screenshot() # default format="pillow"
+image.save("home.jpg") # or home.png. Currently, 只支持png and jpg格式的图像
+ 
+# 得到OpenCV的格式图像。当然，你需要numpy和cv2安装第一个
+import cv2
+image = d.screenshot(format='opencv')
+cv2.imwrite('home.jpg', image)
+ 
+# 获取原始JPEG数据
+imagebin = d.screenshot(format='raw')
+open("some.jpg", "wb").write(imagebin)
+Dump UI hierarchy
+# get the UI hierarchy dump content (unicoded).
+xml = d.dump_hierarchy()
+打开通知或快速设置
+d.open_notification（）
+d.open_quick_settings（）
+选择
+
+class 0消息的用例 统一备注为：无支持Class 0消息的资源（公开版也无资源，暂未测试）
+
+因为2091项目不支持BC0，（不支持电信2G和3G），所以不要提交电信2G和3G相关问题，请知悉。
+
+
+ -------------------------DUMP-----------------------------------
+ |                                                               |
+ |                处理手机循环进dump的方法                       |
+ |                                                               |
+ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+1-清理modem 
+
+fastboot erase mdmddr
+fastboot erase mdm1m9kefs1
+fastboot erase mdm1m9kefs2
+fastboot erase mdm1m9kefs3
+fastboot reboot
+
+2-导出dump
+
+映射：mklink /d [本地文件路径][目标路径]
+---------------------------------------------
+
+
+----------------------------
+|                          |
+|***Batterystats日志*******|
+|                          |
+|**************************|
+v--------------------------v
+
+batterystats有两部分：
+
+Statistics since last charge：     有用
+Statistics since last unplugged：  
+
+
+日志的抓取：
+
+使用dumpsys命令
+1、连接usb 进入shell模式
+2、清除先前的日志： dumpsys batterystats --reset
+3、测试结束后执行： dumpsys batterystats > /data/local/tmp/battery.log
+4、导出battery.log： adb pull /data/loacal/tmp/battery.log 
+
+获取基本信息：
+
+Total run time:  总运行时间（包含充电） 
+Time on battery: 电池状态下运行时间 
+Screen on:       亮屏时间 
+Time remaining:  剩余时间
+Time on battery screen off（realtime）:灭屏时间 
+Time on battery screen off（uptime）:  灭屏未待机时间 
+Amount discharged while screen on:     亮屏耗电值 
+Amount discharged while screen off:    灭屏耗电值
+History中+top/-top:    应用到前台，和退到后台
+根据以上信息，我们可以计算出相关耗电指标：
+待机成功率 =（灭屏时间-灭屏未待机时间）/ 灭屏时间 
+亮屏平均耗电 = 亮屏时间/亮屏耗电值 
+灭屏平均耗电 = 灭屏时间/灭屏耗电值
+
+
+
+---------------------------GIT----------------------------
+|                                                         |
+|                         github                          |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+托管到GitHub步骤：
+
+1、在github上创建项目
+
+2、使用git clone https://github.com/zwnong/learn_python.git克隆到本地
+
+3、编辑项目
+
+4、git add . （将改动添加到暂存区）
+
+5、git commit -m "提交说明"
+
+6、git push origin master 将本地更改推送到远程master分支。
+
+7、创建分支：git branch dev
+
+8、已有本地分支，创建对应的远程分支：git push --set-upstream origin appium
+
+9、已有远程分支，让他们建立track：
+
+10、已有本地分支和远程分支，让他们建立track：git branch --set-upstream-to=origin/appium appium
+
+-----------------问题-----------：
+$ git push -u origin master
+To git@github.com:xxx/xxx.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:xxx/xxx.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+原因：
+GitHub远程仓库中的README.md文件不在本地仓库中。
+解决方案：
+
+$ git pull --rebase origin master
+$ git push -u origin master
+
+
+原文链接：https://blog.csdn.net/u011471873/article/details/51462871
+
+
+
+www.wowotech.net
+https://github.com/MZCretin/Money
+https://github.com/zwnong1/apps.git
+
+URL管理器
+URL下载器  urllib2
+URL分析器  BeautifulSoup
+
+com.android.systemui:id/mobile_volte
+
+
+*********************BeautifulSoup*******************
+https://cuiqingcai.com/1319.html
+
+标签有两个重要的属性：
+
+name：
+
+#属性
+attrs:
+
+------------------------request------------------------------------
+
+---------------------BeautifulSoup---------------------------------
+常用正则表达式：
+                               x = 'qqqabc1s21d1aabcc4s4da2saabcs5d6a5s'
+1、点号 . : 匹配除\r\n之外的任何单个字符
+        >>>print re.finfall('abc.', x)
+		>>>['abc1', 'abcc', 'abcs'] 
+		
+2、星号 * ：匹配前一个字符任意次
+        >>>print re.finfall('abc.', x)
+		>>>['abc', 'abcc', 'abc']
+		
+3、问号 ？:匹配前一个字符0次或1次，与*号不同的是，其最多只匹配一次
+        >>>print re.finfall('abc?', x)
+		>>>['abc', 'abc', 'abc']
+		
+4、点星组合：贪婪算法，尽可能多的匹配数据
+        >>>x = '<img src="https://tva1.sinaimg.cn/mw690/0062M7V0gy1g9xanbrrp3j31k02c0e3r.jpg" data-tag="bdshare">'
+        >>>print(re.findall('http.*.jpg', x))
+		>>>['https://tva1.sinaimg.cn/mw690/0062M7V0gy1g9xanbrrp3j31k02c0e3r.jpg']
+        
+
+------------------------unittest--------------------------
+|                                                         |
+|                   单元测试框架总结                      |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+一、unittest模块各个属性说明
+unittest.TestCase:TestCase类，所有测试用例类继承的基本类
+unittest.main():将一个单元模块变为可直接运行的测试脚本，main()方法使用TestLoader类来搜索所有包含在该模块中以“test”命名开头
+                的测试方法，执行顺序：0-9；A-Z;a-z
+
+TestCase属性：
+
+说明：
+>>>setUp():用于测试用例执行前的初始化工作，如需要访问数据库，可在这里先建立数据库连接
+>>>tearDown():用于测试用例执行的善后工作，如关闭数据库，关闭wifi连接
+
+------------*断言*-----------
+|         assert*（）        |
+-----------------------------
+assertEqual(a,b [msg="测试失败时打印的信息"])：断言a,b是否相等,相等则用例通过
+assertNotEqual(a，b [msg="测试失败时打印的信息"]) 
+assertTrue(x, [msg="测试失败时打印的信息"])::断言x是否为True
+assertFalse(x, [msg="测试失败时打印的信息"]):断言x是否为False
+assertis(a,b [msg="测试失败时打印的信息"]):断言a是否是b,是则用例通过
+assertNotIs(a,b [msg="测试失败时打印的信息"]):断言a是否是b，不是则用例通过
+assertlsNone(x, [msg="测试失败时打印的信息"]):断言x是否为None,是则通过
+asserttIn(a,b [msg="测试失败时打印的信息"]):断言a是否在b中，在则用例通过
+asserttNotIn(a,b [msg="测试失败时打印的信息"]):断言a是否在b中，不在是则用例通过
+assertIsInstance(a,b [msg="测试失败时打印的信息"]):断言a是否是b的实例，是则用例通过
+assertNotIsInstance(a,b [msg="测试失败时打印的信息"]):断言a是否是b的实例，不是则用例通过
+
+
+
+
+二、编写思路
+
+#-----------------------------------------------------
+# 1、设置编码utf-8，导入模块 import unittest
+# coding:utf-8
+# 2、注解：包括创建时间，创建人，项目名称
+'''
+Greated on  2020-01-13
+@author: zwnong
+projret: 编程思路
+'''
+import unittest
+
+# 3、定义测试类：
+class Test(unittest.TestCase):
+    # 4、定义setUp(),用于测试前的初始化工作，注意 入参为“self”
+	def setUp(self):
+	    self.number = input('输入一个数字')
+		self.number = int(self.number)
+	
+	# 5、定义tearDown(),用于用例执行后的善后工作，注意 入参为“self”
+	def tearDown(self):
+	    print(‘测试结束’)
+		
+    # 6、定义测试用例，以“test_”开头，注意 入参为“self”，使用unittest.TestCase下的各种断言
+	def test_case01(self):
+	    print(self.number)
+		self.assertEqual(self.number, 10, msg="您输入的不是10")
+		
+	def test_case02():
+	    print(self.number)
+		self.assertEqual(self.number, 20, msg="您输入的不是20")
+		
+	# 7、跳过用例的方法
+	@unittest.skip('暂时跳过用例3的测试')
+	def test_Case03(self)
+	    print(self.number)
+		self.assertEqual(self.number, 30, msg="你输入的不是30")
+		
+# 8、如果直接运行该文件（if __name__ == "__main__":）,则执行以下语句
+#   unittest.main()会搜索该模块下所有已test开头的测试用例并执行他们
+if __name__ == "__main__":
+	unittest.main()
+	
+
+三、测试用例实例
+
+#------------------------------------------------------
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
