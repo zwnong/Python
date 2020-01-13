@@ -1265,7 +1265,23 @@ if __name__ == "__main__":
 	unittest.main()
 	
 
-三、测试用例实例
+***执行测试用例方案二：
+
+# 先构建测试集
+# 实例化测试套件
+suite = unittest.TestSuite()
+
+# 将测试用例加载到测试套件中
+suite.addTest(Test('test_case02'))
+suite.addTest(Test('test_case01'))
+
+# 执行测试用例：
+# 实例化TextTestRunner类：
+runner = unittest.TextTestRunner()
+
+# 使用run()运行套件
+runner,run(suite)
+
 
 #------------------------------------------------------
 1
