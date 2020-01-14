@@ -1,0 +1,1 @@
+D:\Android\sdk\tools\uiautomatorviewer.bat

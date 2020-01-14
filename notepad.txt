@@ -45,7 +45,10 @@ fastboot模式:adb reboot bootloader
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
 
 ping 127.0.0.1 -n 5000>nul 延迟五分钟后执行下一条命令
+查找端口号：
+netstat -aon | findstr "端口号"
 
+tasklist | findstr "进程号"
 
 
 连接特定的 DNS 后缀: meizu.com
