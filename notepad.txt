@@ -6,7 +6,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 www.wowotech.net   wowotech¿Æ¼¼     Ã´Ã´Ã´Ã´Ã´Ã´
 
-
+¸ÅÂÊĞÔÒÑ½â¾öÎÊÌâ´¦Àí·½·¨£ºÑÏÖØÎÊÌâÒ»ÖÜÈı¸ö°æ±¾£¬Ã¿¸ö°æ±¾ÑéÖ¤30´Î»òÕß30min¡£ÆÕÍ¨ÎÊÌâÒ»ÖÜÈı¸ö°æ±¾£¬20´Î»òÕß15min¡£
 
 ***************   DTMF  £¨Ë«Òô¶àÆµ£©
 	Í¨»°ÖĞ °´¼ü
@@ -141,6 +141,35 @@ WAP PUSH ¿ÉÒÔÍ¨¹ı¶ÌĞÅ½«Á´½Óµ½ÍøÕ¾»òÆóÒµ, µ½Ö§³Ö WAP PUSH ¹¦ÄÜµÄÊÖ»ú, ËùÒÔÄãÖ»ĞèÒ
 |                                                         |
 |                       APIĞ¡½á                           |
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv                                                                     
+
+ÕâÊÇ¹È¸èÊĞ³¡°æµÄÎ¢ĞÅapp£¬¿ÉÒÔÖ±½Ó¿´µ½¡®Î¢ĞÅÍÅ¶Ó¡¯µÄtext¡¢resource-id¡¢class¡¢content-descÊôĞÔÖµ£¬
+Êµ¼ÊÓÃfind_element_by_android_uiautomator ()½áºÏÉÏÃæµÄËÄ¸ö·½Ê½À´¶¨Î»ÔªËØ£¬Õâ²»Ì«ÍÆ¼öµÄ£¡£¡£¡£¬
+ÒòÎªµ¥µ¥Ê¹ÓÃÄÇËÄ¸ö·½Ê½¾ÍÍêÈ«¿ÉÒÔÊµÏÖ¶¨Î»¡£
+
+(¼ÙÉèÒÔÏÂËùÓĞ¶¨Î»·½Ê½ ¶¼¿ÉÒÔÎ¨Ò»¶¨Î»Ä³ÔªËØ)
+
+textÊôĞÔÖµ¶¨Î»
+
+find_element_by_android_uiautomator (¡®new UiSelector().text(¡°XXXX¡±)¡¯).click Õı³£Æ¥Åä
+find_element_by_android_uiautomator (¡®new UiSelector().textContains(¡°XXXX¡±)¡¯).click Ä£ºıÆ¥Åä
+find_element_by_android_uiautomator (¡®new UiSelector().textStartsWith(¡°XXXX¡±)¡¯).click ¿ªÍ·Æ¥Åä
+
+resource-id¡¢class¡¢content-descÊôĞÔÖµ
+
+find_element_by_android_uiautomator (¡®new UiSelector().resourceId(¡°XXXX¡±)¡¯).click()
+find_element_by_android_uiautomator (¡®new UiSelector().className(¡°XXXX¡±)¡¯).click()
+find_element_by_android_uiautomator (¡®new UiSelector().description(¡°XXXX¡±)¡¯).click()
+
+´ËÍâ»¹ÓĞ ÕıÔòÆ¥Åä£¬Õâ¸öĞèÒªÅäºÏÕıÔò±í´ïÊ½
+
+×éºÏ¶¨Î»
+¾ÙÀı£ºclassºÍresource-id ×éºÏ¶¨Î»
+weixin_str = ¡®new UiSelector().resourceId(¡°xxxx¡±).className(¡°XXXX¡±)¡¯
+
+×¢Òâ£¡£¡£¡class ºÍ id×éºÏ¶¨Î»£¬µ«¶¨Î»µÄÕâÀàÔªËØ ÓĞ¿ÉÄÜ»áÓĞºÜ¶à£¡£¡£¡
+
+driver.find_elements_by_android_uiautomator(¡®new UiSelector().resourceId("%s").className("%s")¡¯ % (self.tongxunlu_id, self.tongxunlu_class))[1].click()
+
 
 º¯Êı£ºfind_element_by_android_uiautomator
 ²ÎÊı£ºuia_string
