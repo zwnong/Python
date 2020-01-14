@@ -1,0 +1,70 @@
+移动卡：18826217945
+联通卡：18675638827
+联通卡  18666965943
+移动卡，18825625311
+电信 15363995379
+移动 18826906205
+联通 17666008149
+移动 : 17825763732  
+电信：18023058975
+联通：18578203954  
+联通卡185 2962 9560 
+
+香港卡 +85253777503
+
+5G卡：
+Richard
+主卡：19875629214  副卡：15812642642  
+副卡：15812642652  副卡：15812643299
+
+Richard
+主卡：18826211041  副卡：15812643299
+
+PO
+主卡: 13532264416  副卡:15919150416
+
+Mamba
+主卡：13532266527  副卡：13536596283   13536596715
+
+曾根明
+主卡：18826210562  副卡：15812643369
+
+牛总
+主卡：15017450728  副卡：15812643350   15812743233
+
+rem 根据当前日期获取，年月日串
+set yyyy=%date:~,4%
+set mm=%date:~5,2%
+set day=%date:~8,2% 
+set "YYYYmmdd=%yyyy%%mm%%day%"
+rem 把年月日串中的空格替换为0
+set "YYYYmmdd=%YYYYmmdd: =0%"
+echo "YYYYmmdd%YYYYmmdd%YYYYmmdd"
+rem 根据当前时间获取，时分秒串
+set hh=%time:~0,2%
+set mi=%time:~3,2%
+set ss=%time:~6,2% 
+set "hhmiss=%hh%%mi%%ss%"
+set "hhmiss=%hhmiss: =0%"
+echo "hhmiss%Time%hhmiss"
+echo %hhmiss%
+rem 把时间串中的:替换为0
+set "hhmiss=%hhmiss::=0%"
+rem 把时间串中的空格替换为0
+set "hhmiss=%hhmiss: =0%"
+rem 根据日期时间生成文件名称，中间以HH区分日期和时间部分
+set "filename=%YYYYmmdd%HH%hhmiss%.rar"
+echo %filename%
+pause 
+————————————————
+10.158.2.28
+
+//*[@resource-id="com.meizu.connectivitysettings:id/identity"]
+//*[@resource-id="com.meizu.connectivitysettings:id/identity"]
+
+//*[@id="nv_plugin"]
+//*[@id="mn_Nea2b_menu"]/li[1]/a
+
+//*[@id="liebiao"]/div[5]
+//*[@id="liebiao"]/div[6]/a/img
+//*[@id="liebiao"]/div[5]/a/img
