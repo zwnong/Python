@@ -35,9 +35,14 @@ www.wowotech.net   wowotech科技     么么么么么么
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
  
 adb devices
+adb root
+adb remount 重新挂载系统分区，是系统分区重新可写
+adb disable-verity 解锁system分区
 adb shell screenrecord --time-limit 100
 fastboot模式:adb reboot bootloader
  
+# 启动app的某一个activity
+adb shell am start -n packagName/.Ativity
 
 ----------------------------BAT---------------------------
 |                                                         |
@@ -50,6 +55,7 @@ netstat -aon | findstr "端口号"
 
 tasklist | findstr "进程号"
 
+ 
 
 连接特定的 DNS 后缀: meizu.com
 描述: Intel(R) Ethernet Connection I217-LM
@@ -1315,11 +1321,42 @@ runner = unittest.TextTestRunner()
 runner,run(suite)
 
 
-#------------------------------------------------------
-1
+----------------------HTMLTestRunner----------------------
+|                                                         |
+|                        测试报告                         |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+http://tungwaiyip.info/software/HTMLTestRunner.html
+
+           ImportError: No module named 'StringIO'
+
+下载HTMLTestRunner.py 原因是官网的是python2语法写的，看官手动把官网的HTMLTestRunner.py改成python3的语法：
+
+第94行，将import StringIO修改成import io
+
+第539行，将self.outputBuffer = StringIO.StringIO()修改成self.outputBuffer = io.StringIO()
+
+第642行，将if not rmap.has_key(cls):修改成if not cls in rmap:
+
+第766行，将uo = o.decode('latin-1')修改成uo = e
+
+第775行，将ue = e.decode('latin-1')修改成ue = e
+
+第631行，将print >> sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime)修改成
+print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
 
 
+#定义个报告存放的路径，支持相对路径
+    file_path = "F:\\RobotTest\\result.html"
+    file_result= open(file_path, 'wb')
 
+    #定义测试报告
+    runner = HTMLTestRunner.HTMLTestRunner(stream = file_result, title = u"百度搜索测试报告", 
+	                                       description = u"用例执行情况")
+
+    #运行测试用例
+    runner.run(test)
+    file_result.close()
 
 
 
