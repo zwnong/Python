@@ -27,7 +27,7 @@ www.wowotech.net   wowotech科技     么么么么么么
 3三个运营商vilte互通案例，运营商不支持互通
 4支持联通vilte 三星、MTK平台案例，暂无支持联通vilte三星、MTK平台手机
 
- 
+ 1A1H  一通在通话  一通在等待
  
 --------------------------ADB-----------------------------
 |                                                         |
@@ -1357,7 +1357,6 @@ print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
     #运行测试用例
     runner.run(test)
     file_result.close()
-
 
 
 
