@@ -1,13 +1,12 @@
 # coding=utf-8
 import os
 import time
+import sys
 import unittest
 import random
-
 import uiautomator2 as u2
 from appium import webdriver
 import HTMLTestRunner
-import sys
 
 
 class settingsCase(unittest.TestCase):
@@ -32,7 +31,6 @@ class settingsCase(unittest.TestCase):
         # self.driver.press_keycode(3)
 
     # 打开数据流量
-    @unittest.skip
     def test_01(self):
         self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId('
                                                         '"com.android.settings:id/title").text("运营商网络")').click()
@@ -54,11 +52,15 @@ class settingsCase(unittest.TestCase):
         # self.driver.press_keycode(3)
 
     # 调节自动锁屏时间 30
-    @unittest.skip
+    # @unittest.skip
     def test_02(self):
         self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId('
                                                         '"com.android.settings:id/title").text("显示和亮度")').click()
-        self.driver.swipe(500, 2000, 500, 1100)
+
+        size = self.driver.get_window_size()
+        x = size['width']
+        y = size['height']
+        self.driver.swipe(x/2, y/10*9, x/2, y/7)
         time.sleep(0.5)
         self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId('
                                                         '"android:id/title").text("自动锁屏")').click()
@@ -75,8 +77,11 @@ class settingsCase(unittest.TestCase):
         self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId('
                                                         '"android:id/title").text("壁纸")').click()
 
+        size = self.driver.get_window_size()
+        x = size['width']
+        y = size['height']
         for i in range(2):
-            self.driver.swipe(888, 888, 300, 888)
+            self.driver.swipe(x*0.8222, y*0.3952, x*0.2777, y*0.392)
 
         self.driver.find_element_by_android_uiautomator('new UiSelector().text("显示全部")').click()
         pic = self.driver.find_elements_by_class_name("android.widget.ImageView")
