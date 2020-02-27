@@ -11,7 +11,7 @@
 联通卡185 2962 9560 
 
 香港卡 +85253777503
-
+移动 13632960678  视频彩铃
 5G卡：
 Richard
 主卡：19875629214  副卡：15812642642  
@@ -64,7 +64,9 @@ pause
 
 //*[@id="nv_plugin"]
 //*[@id="mn_Nea2b_menu"]/li[1]/a
-
 //*[@id="liebiao"]/div[5]
 //*[@id="liebiao"]/div[6]/a/img
 //*[@id="liebiao"]/div[5]/a/img
+
+
+drwx------   7 u0_a71         u0_a71          3488 2019-12-31 08:24:59.749999938 +0000 com.meizu.media.gallery
