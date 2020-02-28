@@ -540,6 +540,10 @@ KEYCODE_VOLUME_DOWN 音量减小键   25
  
  六、driver的一些比较重要操作
  
+ 截屏
+ 
+driver.get_screenshot_as_file('./images/login.png')
+ 
 1.reset()
 //重置app
 这时候driver会重置，相当于卸载重装应用。所以本地缓存会失效
@@ -613,6 +617,36 @@ desired_caps['noReset'] = 'true'
 newCommandTimeout：设置未接收到新命令的超时时间，默认60s
 如果60s内没有接收到新命令，appium会自动断开连接，如果我需要很长时间做driver之外的操作，可能延长接收新命令的超时时间
 desired_caps["newCommandTimeout"]=1800
+
+
+
+
+------------实例：----------
+
+   
+#定义的点击“取消”按钮方法
+def check_cancelBtn():
+    print('check cancelBtn')
+
+    try:
+        cancelBtn = driver.find_element_by_id('android:id/button2')
+    except NoSuchElementException:
+        print('no cancelBtn')
+    else:
+        cancelBtn.click()
+
+#定义的点击“跳过”按钮方法
+def check_skipBtn():
+    print('check skipBtn')
+
+    try:
+        skipBtn = driver.find_element_by_id('com.tal.kaoyan:id/tv_skip')
+    except NoSuchElementException:
+        print('no skipBtn')
+    else:
+        skipBtn.click()
+
+
 
 
 --------------------------python--------------------------
