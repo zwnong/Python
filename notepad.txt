@@ -1395,9 +1395,30 @@ print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
 
 
 
+-------------------------PageObject-----------------------
+|                                                         |
+|                       PO模型设计思想                    |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
+      字面理解： 页面对象的意思
+	  
+即：页面元素的定位和页面元素的操作行为封装成一个page类，而测试用例中只包含业务逻辑代码
 
+page的构成：
+类的属性：各元素的定位
+类的方法：各元素的操作方法
 
+case中的测试用例：
+用例中就是调用所需页面类中的方法根据业务逻辑组成测试用例
+
+编写PO模型的六大原则：
+
+   一.用公用方法代表UI所提供的功能
+   二.方法应该返回其他的Pange Object 或者返回用于断言的数据
+   三.同样的行为不同的结果可以建模为不同的方法
+   四.不要在方法上加断言
+   五.不要暴露页面内部的元素给外部
+   六.不需要建模UI内的所有元素
 
 
 
