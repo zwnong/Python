@@ -1414,23 +1414,115 @@ case中的测试用例：
 编写PO模型的六大原则：
 
    一.用公用方法代表UI所提供的功能
-   二.方法应该返回其他的Pange Object 或者返回用于断言的数据
+   二.方法应该返回其他的Page Object 或者返回用于断言的数据
    三.同样的行为不同的结果可以建模为不同的方法
    四.不要在方法上加断言
    五.不要暴露页面内部的元素给外部
    六.不需要建模UI内的所有元素
+   
+   
+PO模式结构：
+	
+	projet
+	  base
+	    __init__.py
+		base.py
+		
+	  page
+	    __init__.py
+		main_page.py
+		*_page.py
+		
+	  testcases
+	    __init__.py
+		*_cases.py
+
+模式分析：
+	base类：经常需要调用的元素定位方法
+	page(case)类：各个页面下的函数方法
+	testcs类：各个测试用例集合
+
+
+class Base():
+    def __init__(self, driver):
+        self.driver = driver
+
+    def find_ID(self, ID):
+        return self.driver.find_element_by_id(ID)
+
+    def find_XPATH(self, XPATH):
+        return self.driver.find_element_by_xpath(XPATH)
+		
+	
+------------------------------------------------------------------------	
+from projet.base.base import Base
+from projet.page.search_page import SearchPage
+
+class MainPage(Base):
+    textview = "//android.widget.TextView[@text='同意']"
+    search_input_box = "com.xueqiu.android:id/tv_search"
+
+    def click_search(self):
+        self.find_XPATH(self.textview).click()
+        self.find_ID(self.search_input_box).click()
+        return SearchPage(self.driver)
 
 
 
+------------------------------------------------------------------------
+from projet.base.base import Base
+
+class SearchPage(Base):
+    search_input = "com.xueqiu.android:id/search_input_text"
+    alibaba = "//android.widget.TextView[@text='阿里巴巴']"
+    price = "com.xueqiu.android:id/current_price"
+    add_me = "com.xueqiu.android:id/follow_btn"
+
+    def input_search_box(self, search_key):
+        self.find_ID(self.search_input).send_keys(search_key)
+        return self
+
+    def click_search_key(self):
+        self.find_XPATH(self.alibaba).click()
+        return self
+
+    def get_price(self):
+        current_price = float(self.find_ID(self.price).text)
+        return current_price
+
+    def addseleciton(self):
+        self.find_ID(self.add_me).click()
+        return self
+
+------------------------------------------------------------------------
+
+from appium import webdriver
+from projet.page.main_page import MainPage
+
+class TestSearchFunc():
+    def setup(self):
+        desire_cap = {}
+        desire_cap['platformName'] = 'Android'
+        desire_cap['platformVersion'] = '5.1.1'
+        desire_cap['deviceName'] = 'emulator-5554'
+        desire_cap['appPackage'] = 'com.xueqiu.android'
+        desire_cap['appActivity'] = 'view.WelcomeActivityAlias'
+        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desire_cap)
+        self.driver.implicitly_wait(10)
+
+    def teardown(self):
+        self.driver.quit()
+
+    def test_search_01(self):
+        mp = MainPage(self.driver)
+        print(mp.click_search().input_search_box("alibaba").click_search_key().get_price())
+
+    def test_search_02(self):
+        mp = MainPage(self.driver)
+        mp.click_search().input_search_box("alibaba").click_search_key().addseleciton()
 
 
-
-
-
-
-
-
-
+------------------------------------------------------------------------
 
 
 
