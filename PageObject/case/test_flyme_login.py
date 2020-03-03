@@ -19,6 +19,7 @@ class TestFlyMeLoginFunc(unittest.TestCase):
         mp.login_flyme().userName_input('18778600955').password_input(
             'nzw18778600955').loginbutton_click().finshbutton_click()
 
+
 if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(TestFlyMeLoginFunc("test_01"))
@@ -30,3 +31,5 @@ if __name__ == '__main__':
     file_path = r'D:\Python\PageObject\report\report' + now + '.html'
     with open(file_path, 'wb') as f:
         HTMLTestRunner.HTMLTestRunner(stream=f, title='settings测试报告', description='描述:').run(suite)
+
+        #  加油
