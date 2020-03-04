@@ -32,4 +32,3 @@ if __name__ == '__main__':
     with open(file_path, 'wb') as f:
         HTMLTestRunner.HTMLTestRunner(stream=f, title='settings测试报告', description='描述:').run(suite)
 
-        #  加油
