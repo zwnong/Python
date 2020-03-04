@@ -1525,6 +1525,11 @@ class TestSearchFunc():
 ------------------------------------------------------------------------
 
 1、读取配置文件基础代码
+	使用ConfigParser类中的get方法，然后读取到value
+	
+	conf=ConfigParser.ConfigParser()
+	key1=conf.get("section","option") # 读取到第一个section的中的option值
+	key2=conf.get("section2","option")# 读取到第二个section的中的option值
 	读取配置文件代码封装
 	
 2、定位信息封装思路
@@ -1539,7 +1544,7 @@ class TestSearchFunc():
 6、封装business
 
 
-
+信号强度对比：通讯性能所有TAB页的注网测试（除5G-SA）农忠文（一台测试机一台对比机）
 
 
 
