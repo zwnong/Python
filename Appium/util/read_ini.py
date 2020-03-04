@@ -22,11 +22,11 @@ class ReadIni:
         return conf
 
     # 通过传入key，获取value
-    def get_value(self, key, section):
-        value = self.data.get(self, key)
+    def get_value(self, key, section=None):
+        value = self.data.get(section, key)
         return value
 
 
 if __name__ == '__main__':
     read_ini = ReadIni()
-    print(read_ini.get_value('settingsElements', 'network'))
+    print(read_ini.get_value('netWork', 'settingsElements'))
