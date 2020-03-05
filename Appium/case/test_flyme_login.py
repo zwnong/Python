@@ -8,6 +8,7 @@ from base.basedriver import BaseDriver
 
 
 class TestFlyMeLoginFunc(unittest.TestCase):
+
     def setUp(self):
         self.driver = BaseDriver.Android_driver()
 
@@ -31,4 +32,3 @@ if __name__ == '__main__':
     file_path = r'D:\Python\PageObject\report\report' + now + '.html'
     with open(file_path, 'wb') as f:
         HTMLTestRunner.HTMLTestRunner(stream=f, title='settings测试报告', description='描述:').run(suite)
-

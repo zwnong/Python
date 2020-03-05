@@ -1,8 +1,10 @@
 # coding = utf-8
 from base.base import Base
+from util.read_ini import ReadIni
 
 
 class FlyMe_Login(Base):
+
     flyMeUserName = 'com.meizu.account:id/edtAccount'
     flyMePassWord = 'com.meizu.account:id/edtPwd'
     loginButton = 'new UiSelector().resourceId("com.meizu.account:id/btn_login").text("登录")'
