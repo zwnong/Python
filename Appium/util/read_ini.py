@@ -29,4 +29,4 @@ class ReadIni:
 
 if __name__ == '__main__':
     read_ini = ReadIni()
-    print(read_ini.get_value('netWork', 'settingsElements'))
+    print(read_ini.get_value('q', 'keyboardLetter'))

@@ -3,14 +3,26 @@ import HTMLTestRunner
 import time
 import unittest
 from appium import webdriver
-from PageObject.page.main_page import MainPage
 from base.basedriver import BaseDriver
+from page.main_page import MainPage
 
 
 class TestFlyMeLoginFunc(unittest.TestCase):
 
     def setUp(self):
-        self.driver = BaseDriver.Android_driver()
+        cap = {
+            "platformName": "Android",
+            "automationName": "UiAutomator2",
+            "deviceName": "973QAFV33GVJN",
+            "appPackage": "com.android.settings",
+            "appActivity": "com.android.settings.Settings",
+
+            "resetKeyboard": True,
+            "noReset": "True"
+        }
+        self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", cap)
+        time.sleep(5)
+        return self.driver
 
     def tearDown(self):
         self.driver.quit()
@@ -29,6 +41,6 @@ if __name__ == '__main__':
     # runner = unittest.TextTestRunner()
     # runner.run(suite)
     runner = HTMLTestRunner.HTMLTestRunner()
-    file_path = r'D:\Python\PageObject\report\report' + now + '.html'
+    file_path = r'D:\Git\Learnning-Python\Appium\report\report' + now + '.html'
     with open(file_path, 'wb') as f:
         HTMLTestRunner.HTMLTestRunner(stream=f, title='settings测试报告', description='描述:').run(suite)

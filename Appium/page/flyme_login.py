@@ -4,11 +4,11 @@ from util.read_ini import ReadIni
 
 
 class FlyMe_Login(Base):
-
-    flyMeUserName = 'com.meizu.account:id/edtAccount'
-    flyMePassWord = 'com.meizu.account:id/edtPwd'
-    loginButton = 'new UiSelector().resourceId("com.meizu.account:id/btn_login").text("登录")'
-    finshButton = 'com.meizu.account:id/finishBtn'
+    readini = ReadIni()
+    flyMeUserName = readini.get_value('flyMeUserName', 'settingsElements')
+    flyMePassWord = readini.get_value('flyMePassWord', 'settingsElements')
+    loginButton = readini.get_value('loginButton', 'settingsElements')
+    finshButton = readini.get_value('finshButton', 'settingsElements')
 
     def userName_input(self, flyMeUserName):
         self.find_by_id(self.flyMeUserName).click()
