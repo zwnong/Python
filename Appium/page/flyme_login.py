@@ -1,9 +1,11 @@
 # coding = utf-8
 from base.base import Base
 from util.read_ini import ReadIni
+from appium import webdriver
 
 
 class FlyMe_Login(Base):
+
     readini = ReadIni()
     flyMeUserName = readini.get_value('flyMeUserName', 'settingsElements')
     flyMePassWord = readini.get_value('flyMePassWord', 'settingsElements')
