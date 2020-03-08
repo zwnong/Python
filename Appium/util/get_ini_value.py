@@ -8,7 +8,7 @@ class GetIniValue:
     def __init__(self,driver):
         self.driver = driver
         
-    def get_ini_value(self,key):
+    def get_ini_element(self,key):
         read_ini = ReadIni()
         value = read_ini.get_value(key)
         by = value.split('>')[0]

@@ -4,7 +4,7 @@ sys.path.append('D:\git\Python\Appium')
 from util.get_ini_value import GetIniValue
 
 
-class FlyMeLoginPage(GetIniValue):
+class FlyMeLogin(GetIniValue):
     def __init__(self, driver):
         '''
         获取登录页面元素信息
@@ -17,13 +17,13 @@ class FlyMeLoginPage(GetIniValue):
         '''
         return self.driver.get_by_ini.get_ini_element('flyMeUserName')
 
-    def password_element(self, flyMePassWord):
+    def password_input(self, flyMePassWord):
         '''
         获取登录页面密码元素信息
         '''
         return self.driver.get_by_ini.get_ini_element('flyMePassWord')
 
-    def loginbutton_element(self, loginButton):
+    def loginbutton_click(self, loginButton):
         '''
         获取登录页面登录按钮元素信息
         '''
