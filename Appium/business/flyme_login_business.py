@@ -10,4 +10,4 @@ class LoginBusiness:
     def flyme_login_pass(self):
         self.flyme_login_page_handle.send_username('18778600955')
         self.flyme_login_page_handle.send_password('nzw18778600955')
-        self.flyme_login_page_handleclick_loginbutton()
+        self.flyme_login_page_handle.click_loginbutton()
