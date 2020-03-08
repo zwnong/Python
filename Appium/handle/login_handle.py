@@ -1,7 +1,8 @@
-# coding = utf-8
+﻿# coding = utf-8
 import sys
 sys.path.append('D:\git\Python\Appium')
 from page.flyme_login_page import FlyMeLoginaPage
+
 
 class FlyMeLoginaPageHandle:
     def __init__(self,):
