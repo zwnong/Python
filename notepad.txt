@@ -1310,6 +1310,10 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 10、已有本地分支和远程分支，让他们建立track：git branch --set-upstream-to=origin/appium appium
 
+11、要将本地push到远程，需要先设置邮箱和用户名
+	 git config --global user.email "***@***"
+	 git config --global user.name "***@***"
+
 -----------------问题-----------：
 $ git push -u origin master
 To git@github.com:xxx/xxx.git
