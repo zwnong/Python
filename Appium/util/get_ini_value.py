@@ -5,16 +5,17 @@ sys.path.append('D:\git\Python\Appium')
 from util.read_ini import ReadIni
 
 
-class GetIniValue:
+class GetIniValue(ReadIni):
 
     def __init__(self, driver):
+        super().__init__()
         self.driver = driver
 
     def get_element(self, key):
         read_ini = ReadIni()
         value1 = read_ini.get_value(key)
         by = value1.split('>')[0]
-        value_by = value1.split('>')[0]
+        value_by = value1.split('>')[1]
 
         if value1 is not None:
             if by == 'id':
@@ -25,3 +26,7 @@ class GetIniValue:
 
             else:
                 return None
+
+if __name__ == '__main__':
+    vlue = GetIniValue()
+    vlue.get_element()

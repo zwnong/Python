@@ -1,11 +1,11 @@
 # coding = utf-8
 import sys
+
 sys.path.append('D:\git\Python\Appium')
-import HTMLTestRunner
 import time
 import unittest
 from appium import webdriver
-from business.flyme_login_business import LoginBusiness
+import HTMLTestRunner
 
 
 class TestFlyMeLoginFunc(unittest.TestCase):

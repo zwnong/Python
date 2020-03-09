@@ -13,13 +13,13 @@ class ReadIni:
 
     def read_ini(self):
         read = configparser.ConfigParser()
-        read.read(self.file_path), "r", "utf_16"
+        read.read(self.file_path, encoding='utf-8')
         return read
 
     # 通过key获取对应的value
     def get_value(self, key, section=None):
         if section is None:
-            section = 'elements'
+            section = 'login_elements'
         try:
             value = self.data.get(key, section)
         except:
@@ -29,4 +29,4 @@ class ReadIni:
 
 if __name__ == '__main__':
     read_ini = ReadIni()
-    print(read_ini.get_value("finish_button", "elements"))
+    print(read_ini.get_value("flyme_username"))
