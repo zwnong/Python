@@ -1,5 +1,6 @@
 # coding = utf-8
 import sys
+
 sys.path.append('D:\git\Python\Appium')
 from util.read_ini import ReadIni
 
@@ -24,9 +25,3 @@ class GetIniValue:
 
             else:
                 return None
-
-
-if __name__ == '__main__':
-    read = ReadIni()
-    print(read.get_value())
-
