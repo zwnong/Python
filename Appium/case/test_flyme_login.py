@@ -1,11 +1,11 @@
 # coding = utf-8
 import sys
 
-sys.path.append('D:\git\Python\Appium')
 import time
 import unittest
 from appium import webdriver
 import HTMLTestRunner
+from business.flyme_login_business import LoginBusiness
 
 
 class TestFlyMeLoginFunc(unittest.TestCase):
@@ -20,7 +20,7 @@ class TestFlyMeLoginFunc(unittest.TestCase):
         self.driver.quit()
 
     def test_01(self):
-        pass
+        self.flyme_login_pass()
 
     def case_suite(self):
         suite = unittest.TestSuite()

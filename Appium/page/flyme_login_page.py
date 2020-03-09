@@ -1,8 +1,7 @@
 # coding = utf-8
 import sys
 
-sys.path.append('D:\git\Python\Appium')
-from util.get_ini_value import GetIniValue
+from util.get_element_value_by_ini import GetIniValue
 
 
 class FlyMeLoginPage(GetIniValue):
