@@ -22,6 +22,6 @@ class ReadIni:
             section = 'login_elements'
         try:
             value = self.data.get(key, section)
-        except:
+        except EOFError:
             value = None
         return value
