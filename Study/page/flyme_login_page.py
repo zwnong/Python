@@ -31,5 +31,4 @@ class FlyMeLoginPage(GetIniValue):
         return self.driver.get_by_ini.get_element('loginButton')
 
     def finish_button_element(self, finishButton):
-        pass
-        return self.driver.get_by_ini.get_element('finishButton')
+        return self.driver.get_by_ini.get_element('finish_button')

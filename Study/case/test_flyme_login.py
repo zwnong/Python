@@ -9,20 +9,31 @@ from business.flyme_login_business import LoginBusiness
 
 
 class TestFlyMeLoginFunc(unittest.TestCase):
-
-    def __init__(self):
-        pass
+    @classmethod
+    def setUpClass(cls):
+        cls.flyme_login_business = LoginBusiness()
 
     def setUp(self):
-        pass
+        capabilities = {
+            "platformName": "Android",
+            # "automationName":"UiAutomator2",
+            "deviceName": "127.0.0.1:21503",
+            "app": "com.android.settings",
+            "appWaitActivity": "com.android.settings.Settings",
+            "noReset": "true"
+        }
+        self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
+        time.sleep(10)
+        return self.driver
 
     def tearDown(self):
         self.driver.quit()
 
     def test_01(self):
-        self.flyme_login_pass()
+        self.flyme_login_business.flyme_login_pass()
 
-    def case_suite(self):
+    @staticmethod
+    def case_suite():
         suite = unittest.TestSuite()
         suite.addTest(TestFlyMeLoginFunc("test_01"))
         # 获取当前时间
@@ -30,7 +41,7 @@ class TestFlyMeLoginFunc(unittest.TestCase):
         # runner = unittest.TextTestRunner()
         # runner.run(suite)
         runner = HTMLTestRunner.HTMLTestRunner()
-        file_path = r'D:\Git\Learnning-Python\Appium\report\report' + now + '.html'
+        file_path = r'D:\Git\Python\Appium\report\report' + now + '.html'
         with open(file_path, 'wb') as f:
             HTMLTestRunner.HTMLTestRunner(stream=f, title='测试报告', description='描述:').run(suite)
 

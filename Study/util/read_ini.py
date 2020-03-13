@@ -6,7 +6,7 @@ import configparser
 class ReadIni:
     def __init__(self, file_path=None):
         if file_path is None:
-            self.file_path = r'D:\Git\Python\Appium\config\elements.ini'
+            self.file_path = 'D:\Git\Python\Appium\config\LoginElememts.ini'
         else:
             self.file_path = file_path
         self.data = self.read_ini()
@@ -25,3 +25,8 @@ class ReadIni:
         except EOFError:
             value = None
         return value
+
+
+if __name__ == '__main__':
+    a = ReadIni()
+    print(a.get_value('flyme_username', 'login_elements'))
