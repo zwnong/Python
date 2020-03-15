@@ -4,7 +4,7 @@
 |                       日常学习记录                      |
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
 
-www.wowotech.net   wowotech科技     么么么么么么
+www.wowotech.net   wowotech科技     
 
 概率性已解决问题处理方法：严重问题一周三个版本，每个版本验证30次或者30min。普通问题一周三个版本，20次或者15min。
 
