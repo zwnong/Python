@@ -170,7 +170,8 @@ WAP PUSH ¿ÉÒÔÍ¨¹ý¶ÌÐÅ½«Á´½Óµ½ÍøÕ¾»òÆóÒµ, µ½Ö§³Ö WAP PUSH ¹¦ÄÜµÄÊÖ»ú, ËùÒÔÄãÖ»ÐèÒ
 	TDD£ºË«³µµÀ£¬Ò»¸ö³µµÀÖ»ÄÜ×ßÒ»¸ö·½Ïò£¬Ë«Ïò»¥²»¸ÉÈÅ¡£
 
 
--------------------------Appium---------------------------
+-------------------------
+---------------------------
 |                                                         |
 |                       APIÐ¡½á                           |
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv                                                                     
@@ -956,8 +957,8 @@ adb shell setenforce 0
 10.57.224.118
 
 »Ô½ÜwifiÕËºÅÃÜÂë£º
-t-v-lianghuijie@meizu.com  
-ÃÜÂë£ºmeili@66
+t-v-liangjianpei@meizu.com  
+ÃÜÂë£º88825286aA
 
 ÁªÍ¨votle
 ·¢ËÍ--->DGVOTLE£¨¿ªÍ¨£©£¬TDVOTLE£¨¹Ø±Õ£© µ½10010
