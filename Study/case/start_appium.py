@@ -11,9 +11,9 @@ def get_driver():
         "platformName": "Android",
         "automationName": "UiAutomator2",
         "deviceName": "973QAFV33GVJN",
-        # "app": r"com.flyme.meizu.store",
-        # "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
-        "noReset": 'True'
+        "app": r"E:\APK\com.taobao.taobao.apk",
+        "appWaitActivity": "'com.taobao.tao.welcome.Welcome",
+        "noReset": "True"
     }
     driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", apabilities)
     time.sleep(5)
@@ -26,5 +26,5 @@ driver = get_driver()
 # driver.lock()
 # time.sleep(2)
 # driver.unlock()
-# time.sleep(2)
+time.sleep(2)
 driver.press_keycode(3)
