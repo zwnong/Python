@@ -17,8 +17,8 @@ class TestFlyMeLoginFunc(unittest.TestCase):
             "platformName": "Android",
             "automationName": "UiAutomator2",
             "deviceName": "973QAFV33GVJN",
-            "app": r"E:\APK\meizustore.apk",
-            "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
+            "app": r"E:\APK\com.taobao.taobao.apk",
+            "appWaitActivity": "'com.taobao.tao.welcome.Welcome",
             "noReset": "True"
         }
         self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)

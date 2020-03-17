@@ -1673,6 +1673,87 @@ class TestSearchFunc():
 
 
 
+-------------------------monkey-----------------------
+|                                                         |
+|                    Monkey使用实例                       |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+adb shell monkey -p com.meizu.media.camera -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle 1000 --monitor-native-crashes -v -v 10000 > E:\monkeylog\camrea.txt
+
+1. 执行Monkey命令：
+
+adb shell monkey -p  package.name  -s 1000 --pct-touch 30  --pct-motion 25  --pct-appswitch 25  --pct-nav 10 --pct-majornav 5  
+--throttle 1000  --monitor-native-crashes  -v -v 100000 >打印日志保存的完成路径（本机路径）
+
+   实际测试中，需要根据待测包的实际使用情况， 确定命令中使用的具体参数。
+
+本命令中参数设置思路：
+
+（1）仅测试一个APP，故：设置参数  -p  package.name
+
+（2）seed值，第一次运行可以不设置，设置目的：产生相同的序列，因上次运行后seed值是1000，为了复现问题，故：设置参数 -s 1000
+
+（3）待测APP，常用操作：点触、滑动、系统按键（返回、HOME等）、键盘；
+
+故：设置参数 --pct-touch 30  --pct-motion 25  --pct-appswitch 25 --pct-majornav 20
+点触事件占30%，手势事件占比25%，Activity跳转事件占比25%，j基本导航时间占比10%，主导航事件占比10% 。
+
+（4）设置各个操作的时延，可以根据实际点触使用时长设置；故：设置参数 --throttle 1000（将时延设置成1000毫秒）
+
+（5）测试过程中，发生过本地代码导致的崩溃行为；故：设置参数 --monitor-native-crashes
+
+（6）打印的日志等级，根据需要设置，故：参数设置 -v -v（1级）
+
+（7）随机事件数，根据实际需要设置此数值，故：设置为 100000
+
+（8）因测试目的是暴露APP崩溃或超时等问题，故未设置调试选项，如：--ignore-crashes、--ignore-timeouts 等。
+
+ 
+
+2. Monkey运行中停止类型
+
+    （1）自动停止
+
+A.正常停止
+
+ 命令中设置的随机事件数执行完成，正常停止，报告中可以搜索到关键字：Finished。
+
+
+B. 异常停止
+
+1）如果限定了Monkey运行在一个或几个特定的包上，那么它会监测试图转到其它包的操作，并对其进行阻止。
+
+2）如果应用程序崩溃或接收到任何失控异常，Monkey将停止并报错。
+
+3）如果应用程序产生了应用程序不响应(application not responding)的错误，Monkey将会停止并报错。
+
+    （2）手动停止
+
+如果想中途暂停Monkey命令的执行，可以用如下命令：
+
+  1）输入：adb shell， 进入shell模式；
+
+  2）输入：ps | grep monkey，查看monkey的进程号；
+
+  3）输入：kill -9 进程号；
+
+  4）输入：exit，退出shell模式。
+
+ 
+
+3. 报告分析
+
+（1）打开日志文件，查找关键字：ANR（程序无响应）、CRASH（崩溃）、Exception（异常）、androidruntime、out of memory、null pointer，若存在，则说明发生异常，需要提交开发来核查。
+
+（2）打开日志文件，查找关键字：Finished，若存在，则证明Monkey正常结束。
+
+ 
+
+4. 若需核查，需提交给开发的内容
+
+（1）Monkey的测试报告；
+
+（2）被测设备的信息。
 
 
 
