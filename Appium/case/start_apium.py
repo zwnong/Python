@@ -7,15 +7,16 @@ from appium import webdriver
 def get_driver():
     capabilities = {
         "platformName": "Android",
-        # "automationName": "UiAutomator2",
-        "deviceName": "Z81MAEWABDBM3",
-        "app": "com.android.settings",
-        "appWaitActivity": "com.android.settings.Settings",
-        "noReset": True
+        "automationName": "UiAutomator2",
+        "deviceName": "973QAFV33GVJN",
+        "app": r"E:\APK\com.taobao.taobao.apk",
+        "appWaitActivity": "com.taobao.tao.homepage.MainActivity3",
+        "noReset": "True"
     }
     driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
+    time.sleep(5)
     return driver
 
 
 driver = get_driver()
-driver.find_elements_by_id('com.android.settings:id/right_arrow')[0].click()
+driver.tap([(500, 500)], 500)

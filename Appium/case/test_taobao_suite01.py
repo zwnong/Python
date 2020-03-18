@@ -5,7 +5,7 @@ import unittest
 from appium import webdriver
 
 '''
-
+设备信息配置 
 '''
 
 
@@ -16,33 +16,30 @@ class testTaoBaoSuite01(unittest.TestCase):
         pass
 
     def setUp(self):
+        # 如果设置的是app包的路径，则不需要配appPackage和appActivity，同理反之
         capabilities = {
             "platformName": "Android",
             "automationName": "UiAutomator2",
             "deviceName": "973QAFV33GVJN",
-            "app": r"E:\APK\com.taobao.taobao.apk",
-            "appWaitActivity": "com.taobao.tao.homepage.MainActivity3",
+            "app": r"E:\APK\meizustore.apk",
+            # "appWaitActivity": "com.taobao.tao.homepage.MainActivity3",
+            "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
+            # # com.meizu.account.login.activity.GrantActivity
+            # # com.meizu.store.newhome.NewHomeActivity
             "noReset": "True"
         }
         self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
-        time.sleep(5)
+        time.sleep(6)
         return self.driver
 
     def tearDown(self):
         self.driver.quit()
 
     def test_01(self):
-        search = self.driver.find_element_by_id('com.taobao.taobao:id/search_icon')
+        self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/nav_title").text("我的")').click()
         time.sleep(1)
-        search.click()
-        time.sleep(1)
-        search.clear()
-        time.sleep(1)
-        search.send_keys('书籍')
-        time.sleep(1)
-        self.driver.find_element_by_id('com.taobao.taobao:id/searchbtn').click()
-
-        self.driver.press_keycode(3)
+        self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/person_item_describe").text("未登陆")').click()
+        time.sleep(5)
 
     @staticmethod
     def case_suite():
@@ -57,7 +54,7 @@ class testTaoBaoSuite01(unittest.TestCase):
         with open(file_path, 'wb') as f:
             HTMLTestRunner.HTMLTestRunner(stream=f, title='测试报告', description='描述:').run(suite)
 
+
 if __name__ == '__main__':
     run = testTaoBaoSuite01()
     run.case_suite()
-

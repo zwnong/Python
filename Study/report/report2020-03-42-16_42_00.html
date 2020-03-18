@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-03-17 20:27:57</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:23.263326</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-03-18 16:42:00</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:21.354135</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>描述:</p>
@@ -246,12 +246,12 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "D:/Git/Python/Appium/case/test_taobao_suite01.py", line 37, in test_01
-    search.clear()
-  File "D:\Python\lib\site-packages\appium\webdriver\webelement.py", line 342, in clear
-    self._execute(Command.CLEAR, data)
-  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webelement.py", line 494, in _execute
-    return self._parent.execute(command, params)
+  File "D:/Git/Python/Appium/case/test_taobao_suite01.py", line 41, in test_01
+    self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/person_item_describe").text("未登陆")').click()
+  File "D:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 422, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "D:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
   File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 236, in execute
     self.error_handler.check_response(response)
   File "D:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
@@ -260,15 +260,15 @@ ft1.1: Traceback (most recent call last):
     super(MobileErrorHandler, self).check_response(response)
   File "D:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.id: com.taobao.taobao:id/search_icon' does not exist in DOM anymore
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
 
 Traceback (most recent call last):
-  File "D:/Git/Python/Appium/case/test_taobao_suite01.py", line 37, in test_01
-    search.clear()
-  File "D:\Python\lib\site-packages\appium\webdriver\webelement.py", line 342, in clear
-    self._execute(Command.CLEAR, data)
-  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webelement.py", line 494, in _execute
-    return self._parent.execute(command, params)
+  File "D:/Git/Python/Appium/case/test_taobao_suite01.py", line 41, in test_01
+    self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/person_item_describe").text("未登陆")').click()
+  File "D:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 422, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "D:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
   File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 236, in execute
     self.error_handler.check_response(response)
   File "D:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
@@ -277,7 +277,7 @@ Traceback (most recent call last):
     super(MobileErrorHandler, self).check_response(response)
   File "D:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.id: com.taobao.taobao:id/search_icon' does not exist in DOM anymore
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
 
 
 
