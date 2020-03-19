@@ -1,5 +1,6 @@
 # coding = utf-8
 import os
+import time
 import tkinter
 
 # 创建窗体
@@ -15,29 +16,31 @@ window.geometry("400x400+200+50")
 
 # 封装button1的功能,执行adb shell monkey -p com.meizu.filemanager -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20
 # --pct-nav 10 --pct-majornav 10 --throttle 1000 --monitor-native-crashes -v -v 10000 > E:\monkeylog\camrea.txt
-def fn():
+def fnc():
+    os.popen('adb shell touch sdcard/log.txt')
     package = entry.get()
+    numb = entry1.get()
+
     os.popen('adb shell monkey -p ' + package + ' -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle '
-                                                '1000 --monitor-native-crashes -v -v 1000 > E:\monkeylog\camrea.txt')
+                                                '10 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
 
 
-label = tkinter.Label(window,
-                      text="请输入包名",
-                      # bg="pink", fg="red",
-                      # font=("黑体", 20),
-                      # width=20,
-                      # height=10,
-                      # wraplength=100,
-                      justify="left",
-                      # anchor="n"
-                      )
+label = tkinter.Label(window, text="请输入包名", justify="left")
 label.pack()
+
 # 创建输入框
 entry = tkinter.Entry(window)
 entry.pack()
 
+# 输入次数框
+label = tkinter.Label(window, text="请输入随机点击次数", justify="left")
+label.pack()
+
+entry1 = tkinter.Entry(window)
+entry1.pack()
+
 # 创建按钮
-button1 = tkinter.Button(window, text="运行", command=fn, width=20, height=6)
+button1 = tkinter.Button(window, text="运行", command=fnc, width=20, height=6)
 button1.pack()
 
 window.mainloop()
