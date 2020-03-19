@@ -5,7 +5,7 @@ import unittest
 from appium import webdriver
 
 '''
-设备信息配置 
+
 '''
 
 

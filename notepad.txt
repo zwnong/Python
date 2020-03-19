@@ -679,6 +679,8 @@ appium支持以下物理按键模拟:
 
 电话键
 
+
+
 KEYCODE_CALL 拨号键 5
 KEYCODE_ENDCALL 挂机键 6
 KEYCODE_HOME 按键Home 3
@@ -1678,7 +1680,8 @@ class TestSearchFunc():
 |                    Monkey使用实例                       |
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-adb shell monkey -p com.meizu.media.camera -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle 1000 --monitor-native-crashes -v -v 10000 > E:\monkeylog\camrea.txt
+adb shell monkey -p com.meizu.filemanager -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle 1000 --monitor-native-crashes -v -v 10000 > E:\monkeylog\camrea.txt
+
 
 1. 执行Monkey命令：
 
