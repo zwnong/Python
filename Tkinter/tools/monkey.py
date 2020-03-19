@@ -1,5 +1,6 @@
 # coding = utf-8
 import os
+import time
 import tkinter
 
 # 创建窗体
@@ -15,16 +16,19 @@ window.geometry("400x400+200+50")
 
 # 封装button1的功能,执行adb shell monkey -p com.meizu.filemanager -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20
 # --pct-nav 10 --pct-majornav 10 --throttle 1000 --monitor-native-crashes -v -v 10000 > E:\monkeylog\camrea.txt
-def fn():
-    os.popen('adb shell rm -rf monkeylog.txt')
-    log = os.popen('adb shell mkdir monkeylog.tex')
+def fnc():
+    os.popen('adb shell rm -rf sdcard/log1')
+    time.sleep(1)
+    os.popen('adb shell mkdir sdcard/log1')
+    time.sleep(1)
+    os.popen('adb shell touch sdcard/log1/log.txt')
+    log = 'sdcard/log1/log.txt'
 
     package = entry.get()
     nub = entry1.get()
-    log = entry2.get()
 
     os.popen('adb shell monkey -p ' + package + ' -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle '
-                                                '10 --monitor-native-crashes -v -v ' + nub + log)
+                                                '10 --monitor-native-crashes -v -v ' + str(nub) + log)
 
 
 label = tkinter.Label(window, text="请输入包名", justify="left")
@@ -41,16 +45,8 @@ label.pack()
 entry1 = tkinter.Entry(window)
 entry1.pack()
 
-
-# 输入log地址框
-label2 = tkinter.Label(window, text="logd", justify="left")
-label2.pack()
-
-entry2 = tkinter.Entry(window)
-entry2.pack()
-
 # 创建按钮
-button1 = tkinter.Button(window, text="运行", command=fn, width=20, height=6)
+button1 = tkinter.Button(window, text="运行", command=fnc, width=20, height=6)
 button1.pack()
 
 window.mainloop()
