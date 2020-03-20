@@ -34,6 +34,16 @@ def fnc():
     os.popen('adb shell monkey -p ' + package + ' -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle '
                                                 '800 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
 
+
+def button_stop():
+    result = os.popen('adb shell "ps -A |grep monkey').readline()
+    print(result)
+    a = result.split("futex_wait_queue_me")[0]
+    b = a[13:19]
+    print(b)
+    os.popen('adb shell kill -9\t' + b)
+
+
 # 输入包名提示
 label = tkinter.Label(window, text="请输入包名", justify="left")
 label.pack()
@@ -58,5 +68,9 @@ button1.pack()
 # 输入随机数，运行当前应用
 button2 = tkinter.Button(window, text="输入次数 运行当前应用", command=button_two, width=19, height=1)
 button2.pack()
+
+# 停止按钮
+button_stop = tkinter.Button(window, text="停\n止", command=button_stop, fg="red", width=5, height=19)
+button_stop.pack()
 
 window.mainloop()
