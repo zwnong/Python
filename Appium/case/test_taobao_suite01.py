@@ -4,10 +4,6 @@ import time
 import unittest
 from appium import webdriver
 
-'''
-
-'''
-
 
 class testTaoBaoSuite01(unittest.TestCase):
 

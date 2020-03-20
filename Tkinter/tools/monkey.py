@@ -9,21 +9,21 @@ window.title('monkey')
 window.geometry("400x200+200+50")
 
 """
-1、获取输入框输入的包名（判断是否为真）
+1、获取输入框输入的包名
 2、点击执行按钮
 """
 
 
 def get_package_vlue():
     result = os.popen('adb shell dumpsys window | findstr mCurrentFocus').readline()
-    s = result.split(':')[1]
-    a = s.split('/')
-    b = a[0]
-    print(b)
+    print(result)
+    a = result.split('u0')[1]
+    package_name = a.split('/')[0]
+    print(package_name)
     numb = entry1.get()
     print(numb)
-    os.popen('adb shell monkey -p ' + b + ' -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle '
-                                          '600 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
+    os.popen('adb shell monkey -p ' + package_name + ' -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav 10 --throttle '
+                                                     '600 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
 
 
 # 封装button1的功能,执行adb shell monkey -p com.meizu.filemanager -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20

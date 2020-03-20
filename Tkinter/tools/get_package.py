@@ -4,11 +4,8 @@ import os
 
 def get_package_vlue():
     result = os.popen('adb shell dumpsys window | findstr mCurrentFocus').readline()
-    s = result.split(':')[1]
-    print(s)
-    a = s.split('/')
-    print(a)
-    b = a[0]
-    print(b)
-
+    print(result)
+    a = result.split('u0')[1]
+    package_name = a.split('/')[0]
+    print(package_name)
 get_package_vlue()
