@@ -1,6 +1,5 @@
 # coding = utf-8
 import os
-import time
 import tkinter
 
 # 创建窗体
