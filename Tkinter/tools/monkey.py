@@ -6,6 +6,8 @@ import tkinter
 window = tkinter.Tk()
 window.title('monkey')
 window.geometry("400x250+200+50")
+window.minsize(400, 250)   # 最小尺寸
+window.maxsize(250, 250)   # 最大尺寸
 
 """
 1、获取输入框输入的包名
@@ -13,18 +15,13 @@ window.geometry("400x250+200+50")
 """
 
 
-def twopackage():
-    result = os.popen('adb shell dumpsys window | findstr mCurrentFocus').readline()
-    print(result)
-    a = result.split('u0')[1]
-    package_name = a.split('/')[0]
-    print(package_name)
-    package2 = entry.get()
-    numb = entry1.get()
+# 通过读书txt文件
+def read_txt():
+    os.popen('adb push E:\whitelist.txt /data')
 
-    os.popen('adb shell monkey -p ' + package_name + '-p ' + package2 + '-s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav '
-                                                                        '10 --throttle '
-                                                                        '800 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
+    numb = entry1.get()
+    os.popen('adb shell monkey --pkg-whitelist-file /data/whitelist.txt -s 1000 --pct-touch 35 --pct-motion 25 --pct-appswitch 20 --pct-nav 10 --pct-majornav '
+             '10 --throttle 800 --monitor-native-crashes -v -v ' + numb + '>E:\log.txt')
 
 
 def button_two():
@@ -82,8 +79,8 @@ button1.pack()
 button2 = tkinter.Button(window, text="输入次数 运行当前应用", command=button_two, width=19, height=1)
 button2.pack()
 
-# 运行当前包名和指定包名
-button3 = tkinter.Button(window, text="执行当前应用和指定包名", command=twopackage, width=19, height=1)
+# 运行白名单包名
+button3 = tkinter.Button(window, text="运行配置文件的包名", command=read_txt, width=19, height=1)
 button3.pack()
 
 # 停止按钮
