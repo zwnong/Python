@@ -9,14 +9,16 @@ def get_pid():
     b = a[13:19]
     print(b)
 
-
-
-
     # print(result)
     # a = result.split('u0')[1]
     # package_name = a.split('/')[0]
     # print(package_name)
 
 
+def readtxt():
+    with open(r'E:\whitelist.txt', 'r') as f:
+        package_name = f.readlines()
+        print(package_name)
 
-get_pid()
+
+readtxt()
