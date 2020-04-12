@@ -31,7 +31,7 @@ www.wowotech.net   wowotech科技
  
 --------------------------ADB-----------------------------
 |                                                         |
-|                       adb小结                           |
+| 1                      adb小结                           |
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
  
 adb devices
