@@ -1759,10 +1759,28 @@ B. 异常停止
 （2）被测设备的信息。
 
 
+-------------------------selenium-----------------------
+|                                                         |
+|                                           |
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 
+安装：pip install selenium
 
+浏览器驱动：加载浏览器环境需要下载对应的浏览器驱动，此处选择 Chrome http://npm.taobao.org/mirrors/chromedriver/
 
+将驱动文件放在浏览器安装目录中，并配置环境变量
+
+# coding = utf-8
+
+from selenium import webdriver
+
+# 存储浏览器驱动路劲
+
+path_browser_driver = r'D:\Google\Chrome\Application\chromedriver.exe'
+driver = webdriver.Chrome(executable_path=path_browser_driver)
+url = 'http://www.sogou.com/'
+driver.get(url)
 
 
 

@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="" />
+    <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report2020-04-43-14_43_35.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/.idea/NOWCODE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/Algorithm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/Algorithm/str_len.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/.idea/Selenium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/study/demo_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-03-13-16_13_15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-03-29-12_29_30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notepad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../notepad.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +35,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZDe5q876vuQK2yotSfU78CWzBM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/case/case.py" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
@@ -30,7 +59,7 @@
       <recent name="E:\Appium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sever">
+  <component name="RunManager" selected="Python.HTMLTestRunner">
     <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,11 +188,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.HTMLTestRunner" />
-      <item itemvalue="Python.start_appium" />
       <item itemvalue="Python.dos_cmd" />
+      <item itemvalue="Python.port" />
       <item itemvalue="Python.read_init" />
       <item itemvalue="Python.sever" />
-      <item itemvalue="Python.port" />
+      <item itemvalue="Python.start_appium" />
     </list>
     <recent_temporary>
       <list>
@@ -188,6 +217,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="442" y="163" key="#Notifications" timestamp="1584805132256">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -205,34 +237,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="145" key="#port/0.0.1920.1040@0.0.1920.1040" timestamp="1585396027501" />
-    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1585374618206">
+    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1586932214330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585374618206" />
-    <state width="1661" height="254" key="GridCell.Tab.0.bottom" timestamp="1585476308156">
+    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586932214330" />
+    <state width="1661" height="255" key="GridCell.Tab.0.bottom" timestamp="1586933015285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585476308156" />
-    <state width="1661" height="254" key="GridCell.Tab.0.center" timestamp="1585476308156">
+    <state width="1661" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586933015285" />
+    <state width="1661" height="255" key="GridCell.Tab.0.center" timestamp="1586933015285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="254" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585476308156" />
-    <state width="1661" height="254" key="GridCell.Tab.0.left" timestamp="1585476308156">
+    <state width="1661" height="255" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586933015285" />
+    <state width="1661" height="255" key="GridCell.Tab.0.left" timestamp="1586933015285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="254" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585476308156" />
-    <state width="1661" height="254" key="GridCell.Tab.0.right" timestamp="1585476308156">
+    <state width="1661" height="255" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586933015285" />
+    <state width="1661" height="255" key="GridCell.Tab.0.right" timestamp="1586933015285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="254" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585476308156" />
+    <state width="1661" height="255" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586933015285" />
     <state x="377" y="258" key="SettingsEditor" timestamp="1584378883845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="377" y="258" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584378883845" />
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1585373498207">
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1586932172771">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585373498207" />
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586932172771" />
     <state x="886" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1585394739447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

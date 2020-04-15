@@ -18,7 +18,7 @@ class TestCase(unittest.TestCase):
             # "automationName": "UiAutomator2",
             "deviceName": "127.0.0.1:21503",
             "app": r"E:\APK\meizustore.apk",
-            "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
+            # "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
             "noReset": "True"
         }
         self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
         # runner = unittest.TextTestRunner()
         # runner.run(suite)
         runner = HTMLTestRunner.HTMLTestRunner()
-        file_path = r'E:\Appium\report\report' + now + '.html'
+        file_path = r'E:\github\Python\Appium\report\report' + now + '.html'
         with open(file_path, 'wb') as f:
             HTMLTestRunner.HTMLTestRunner(stream=f, title='测试报告', description='描述:').run(suite)
 
