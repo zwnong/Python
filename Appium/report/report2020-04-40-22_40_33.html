@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-04-15 14:43:35</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:03.640834</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-04-19 22:40:33</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:15.837467</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>描述:</p>
@@ -246,20 +246,21 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: b''Traceback (most recent call last):
-  File "E:/github/Python/Appium/case/case.py", line 24, in setUp
-    self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
-  File "E:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 151, in __init__
-    proxy
-  File "E:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "E:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 227, in start_session
-    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "E:/github/Python/Appium/case/case.py", line 33, in test_01
+    self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/nav_title").text("我的")').click()
+  File "E:\Python\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 143, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "E:\Python\lib\site-packages\appium\webdriver\webdriver.py", line 284, in find_element
+    'value': value})['value']
   File "E:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
+  File "E:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "E:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
   File "E:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: pkg: /data/local/tmp/appium_cache/7280876e456c1bb793964772b5bcb2ac96ecfcc4.apk
-Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
 
 
 

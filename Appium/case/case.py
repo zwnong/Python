@@ -17,8 +17,9 @@ class TestCase(unittest.TestCase):
             "platformName": "Android",
             # "automationName": "UiAutomator2",
             "deviceName": "127.0.0.1:21503",
+            # "deviceName": "d1336851",
             "app": r"E:\APK\meizustore.apk",
-            # "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
+            "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
             "noReset": "True"
         }
         self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
