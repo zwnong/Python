@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/report/report2020-04-24-22_24_20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report2020-04-25-22_25_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report2020-04-37-22_37_12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/report2020-04-40-22_40_33.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APPIUM自动化框架设计到开发.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/doubleclick.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/swip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/demo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/demo/study.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UiAutomator2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UiAutomator2/case/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UiAutomator2/case/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report2020-04-43-14_43_35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_driver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +48,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interface" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -46,7 +56,7 @@
       <recent name="E:\Appium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HTMLTestRunner">
+  <component name="RunManager" selected="Python.doubleclick">
     <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +91,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/dos_cmd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="doubleclick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Appium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/doubleclick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,42 +183,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start_appium" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Appium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/start_appium.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.HTMLTestRunner" />
       <item itemvalue="Python.dos_cmd" />
       <item itemvalue="Python.port" />
       <item itemvalue="Python.read_init" />
       <item itemvalue="Python.sever" />
-      <item itemvalue="Python.start_appium" />
+      <item itemvalue="Python.doubleclick" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.doubleclick" />
         <item itemvalue="Python.sever" />
         <item itemvalue="Python.port" />
         <item itemvalue="Python.read_init" />
         <item itemvalue="Python.dos_cmd" />
-        <item itemvalue="Python.start_appium" />
       </list>
     </recent_temporary>
   </component>
@@ -216,42 +226,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584805749426" />
-    <state x="734" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585376877334">
+    <state x="734" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589957731852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="734" y="303" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585376877334" />
+    <state x="734" y="303" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589957731852" />
     <state x="703" y="145" key="#port" timestamp="1585396027501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="145" key="#port/0.0.1920.1040@0.0.1920.1040" timestamp="1585396027501" />
-    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1586932214330">
+    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1590296153165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586932214330" />
-    <state width="1661" height="255" key="GridCell.Tab.0.bottom" timestamp="1587307278502">
+    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590296153165" />
+    <state width="1438" height="201" key="GridCell.Tab.0.bottom" timestamp="1589961905455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587307278502" />
-    <state width="1661" height="255" key="GridCell.Tab.0.center" timestamp="1587307278502">
+    <state width="1438" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905455" />
+    <state width="1438" height="201" key="GridCell.Tab.0.center" timestamp="1589961905453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="255" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587307278502" />
-    <state width="1661" height="255" key="GridCell.Tab.0.left" timestamp="1587307278502">
+    <state width="1438" height="201" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905453" />
+    <state width="1438" height="201" key="GridCell.Tab.0.left" timestamp="1589961905451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="255" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587307278502" />
-    <state width="1661" height="255" key="GridCell.Tab.0.right" timestamp="1587307278502">
+    <state width="1438" height="201" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905451" />
+    <state width="1438" height="201" key="GridCell.Tab.0.right" timestamp="1589961905455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1661" height="255" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587307278502" />
+    <state width="1438" height="201" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905455" />
     <state x="399" y="220" key="SettingsEditor" timestamp="1587299996678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="399" y="220" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587299996678" />
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1587450268594">
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1589955954206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587450268594" />
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589955954206" />
     <state x="886" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1585394739447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

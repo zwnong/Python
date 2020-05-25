@@ -14,9 +14,9 @@ class Driver:
             "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
             "noReset": "true"
         }
-        android_driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
+        self.android_driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
         time.sleep(5)
-        return android_driver
+        return self.android_driver
 
     def ios_driver(self):
         pass
