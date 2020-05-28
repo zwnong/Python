@@ -6,7 +6,7 @@ import configparser
 class ReadIni:
     def __init__(self, file_path=None):
         if file_path is None:
-            self.file_path = r'E:\Appium\config\Element.ini'
+            self.file_path = r'E:\github\Python\Appium\config\Element.ini'
         else:
             self.file_path = file_path
         self.data = self.read_ini()
@@ -19,7 +19,7 @@ class ReadIni:
     # 传入key获取value
     def get_value(self, key, section=None):
         if section is None:
-            section = 'store_login'
+            section = 'login'
         try:
             value_element = self.data.get(section, key)
         except EOFError:
@@ -29,4 +29,4 @@ class ReadIni:
 
 if __name__ == '__main__':
     value = ReadIni()
-    print(value.get_value('username', 'store_login'))
+    print(value.get_value('username', 'login'))

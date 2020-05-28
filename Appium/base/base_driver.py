@@ -20,3 +20,8 @@ class Driver:
 
     def ios_driver(self):
         pass
+
+
+if __name__ == '__main__':
+    run = Driver
+    run.android_driver()

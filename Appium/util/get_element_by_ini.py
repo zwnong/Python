@@ -1,6 +1,6 @@
 # coding = utf-8
 import time
-
+from selenium.webdriver.support.ui import WebDriverWait
 from util.read_init import ReadIni
 
 
@@ -20,9 +20,18 @@ class GetElementByIni:
                 # 这里开始 判断>左边值 用对应的定位方式
                 # 如 uid 为uiautomator的resourceId定位方式
 
-                if left_value == 'uid':
-                    self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId(' + right_value + ')')
+                # resourceId定位
+                if left_value == 'id':
+                    WebDriverWait(self.driver, 3, 1).until(lambda driver: driver.find_element_by_id(right_value))
+
+                # class定位
+                if left_value == 'class':
+                    WebDriverWait(self.driver, 3, 1).until(lambda driver: driver.find_element_by_class_name(right_value))
+
             except EOFError:
                 # 如果有异常，则截图 或者做出对应操作
                 now = time.strftime("%Y-%m-%M-%H_%M_%S", time.localtime(time.time()))
-                self.driver.save_screenshot(r"D:\Git\Python\Appium\screenshot\shot" + now)
+                self.driver.save_screenshot(r"D:\Git\Python\Appium\screenshot\sc" + now)
+
+
+

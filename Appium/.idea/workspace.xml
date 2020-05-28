@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/APPIUM自动化框架设计到开发.xmind" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/doubleclick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/swip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/demo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NOWCODE/7/demo/study.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UiAutomator2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UiAutomator2/case/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UiAutomator2/case/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/startAppium.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/test_threading.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/store_login_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/qq_login_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/meizu_store_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/qq_login_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Element.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/Element.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/store_login_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/qq_login_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/store_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/qq_login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-04-24-22_24_20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-04-25-22_25_02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-04-37-22_37_12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report2020-04-40-22_40_33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/get_element_by_ini.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_element_by_ini.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/read_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_init.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interface" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/case/qq_login_case.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -56,7 +54,7 @@
       <recent name="E:\Appium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.doubleclick">
+  <component name="RunManager" selected="Python.get_element_by_ini">
     <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +67,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/qq_login_case.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dos_cmd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_element_by_ini" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,49 +88,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/dos_cmd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="doubleclick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Appium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/doubleclick.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="port" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Appium" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/port.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/get_element_by_ini.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,42 +118,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sever" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in qq_login_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/sever.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/qq_login_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.HTMLTestRunner" />
-      <item itemvalue="Python.dos_cmd" />
-      <item itemvalue="Python.port" />
+      <item itemvalue="Python tests.Unittests in qq_login_case.py" />
       <item itemvalue="Python.read_init" />
-      <item itemvalue="Python.sever" />
-      <item itemvalue="Python.doubleclick" />
+      <item itemvalue="Python.get_element_by_ini" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.doubleclick" />
-        <item itemvalue="Python.sever" />
-        <item itemvalue="Python.port" />
+        <item itemvalue="Python.get_element_by_ini" />
         <item itemvalue="Python.read_init" />
-        <item itemvalue="Python.dos_cmd" />
+        <item itemvalue="Python tests.Unittests in qq_login_case.py" />
       </list>
     </recent_temporary>
   </component>
@@ -222,10 +167,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="442" y="163" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1584805132256" />
-    <state x="449" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584805749426">
+    <state x="449" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590638327807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="449" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584805749426" />
+    <state x="449" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590638327807" />
     <state x="734" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589957731852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,26 +179,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="145" key="#port/0.0.1920.1040@0.0.1920.1040" timestamp="1585396027501" />
-    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1590296153165">
+    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1590638325132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590296153165" />
-    <state width="1438" height="201" key="GridCell.Tab.0.bottom" timestamp="1589961905455">
+    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590638325132" />
+    <state width="1899" height="265" key="GridCell.Tab.0.bottom" timestamp="1590666912808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1438" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905455" />
-    <state width="1438" height="201" key="GridCell.Tab.0.center" timestamp="1589961905453">
+    <state width="1899" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590666912808" />
+    <state width="1899" height="265" key="GridCell.Tab.0.center" timestamp="1590666912808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1438" height="201" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905453" />
-    <state width="1438" height="201" key="GridCell.Tab.0.left" timestamp="1589961905451">
+    <state width="1899" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590666912808" />
+    <state width="1899" height="265" key="GridCell.Tab.0.left" timestamp="1590666912807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1438" height="201" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905451" />
-    <state width="1438" height="201" key="GridCell.Tab.0.right" timestamp="1589961905455">
+    <state width="1899" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590666912807" />
+    <state width="1899" height="265" key="GridCell.Tab.0.right" timestamp="1590666912808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1438" height="201" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589961905455" />
+    <state width="1899" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590666912808" />
     <state x="399" y="220" key="SettingsEditor" timestamp="1587299996678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
