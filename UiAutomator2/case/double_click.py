@@ -24,7 +24,8 @@ def doubleClick():
 
     while True:
         try:
-            device.double_click(int(x) / 10 * 8.6, int(y) / 10 * 8, 0.2)
+            device.double_click(int(x) / 10 * 9.2, int(y) / 10 * 8, 0.2)
+
         except EOFError:
             print('fail')
 
@@ -32,11 +33,26 @@ def doubleClick():
 def sendkey():
     file_path = r'./text.txt'
     with open(file_path, 'r+') as f:
-        while True:
-            for i in f:
-                device(focused=True).send_keys(i)
-                time.sleep(2)
-                device.double_click(int(x) / 10 * 9.5, int(y) / 10 * 9.5, 0.1)
+        lists = []
+        for i in f:
+            lists.append(i)
+        it = iter(lists)
+        for j in it:
+            x = next(j)
+            print(x)
+
+    # # 首先获得Iterator对象:
+    # it = iter([1, 2, 3, 4, 5])
+    # # 循环:
+    # while True:
+    #     try:
+    #         # 获得下一个值:
+    #         x = next(it)
+    #         print(x)
+    #     except StopIteration:
+    #         # 遇到StopIteration就退出循环
+    #         break
 
 
 doubleClick()
+# sendkey()

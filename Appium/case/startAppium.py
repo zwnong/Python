@@ -1,20 +1,12 @@
 # coding = utf-8
-from appium import webdriver
+from base.base_driver import Driver
+from util.get_element_by_ini import GetElementByIni
 from selenium.webdriver.support.ui import WebDriverWait
 
 
 def get_driver():
-    capabilities = {
-        "platformName": "Android",
-        # "automationName": "UiAutomator2",
-        "deviceName": "127.0.0.1:21503",
-        "app": r"E:\apk\QQ.apk",
-        "appWaitActivity": "com.tencent.mobileqq.activity.LoginActivity",
-        # "waitActivity": "",
-        "noReset": "True"
-    }
-    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
-    return driver
+    driver = Driver()
+    return driver.android_driver()
 
 
 # 获取屏幕分辨率
@@ -80,17 +72,30 @@ def go_login():
     ——ignored_exceptions：超时后的异常信息，默认情况下抛 NoSuchElementException 异常
     :return:
     """
+
     WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_id('com.tencent.mobileqq:id/btn_login')).click()
     # driver.find_element_by_id('com.tencent.mobileqq:id/btn_login').click()
 
 
 # 登录页面 id定位 输入账号密码(qq用户名没有id定位用class定位)
 def login_by_class():
-    WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_class_name('android.widget.EditText')).send_keys('849130403')
+    WebDriverWait(driver, 3, 1).until(
+        lambda driver: driver.find_element_by_xpath("//android.widget.EditText[@text='QQ号/手机号/邮箱' and @content-desc='请输入QQ号码或手机或邮箱']")).send_keys(
+        '849130403')
     WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_id('com.tencent.mobileqq:id/password')).send_keys('nzw15007867627&*')
     WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_id('com.tencent.mobileqq:id/login')).click()
 
 
+def send_key_kuasou():
+    file_path = r'./text.txt'
+    with open(file_path, 'r+') as f:
+        for i in f:
+            text = f.readline()
+            driver.find_element_by_xpath(
+                "//android.widget.EditText[@resource-id='com.smile.gifmaker:id/live_gzone_voice_text' and @text='说点什么...']").send_keys(text)
+
+
 driver = get_driver()
-go_login()
-login_by_class()
+# go_login()
+# login_by_class()
+send_key_kuasou()

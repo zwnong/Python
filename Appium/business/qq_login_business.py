@@ -4,8 +4,8 @@ from handle.qq_login_handle import QQLoginHandle
 
 # 业务层
 class QQLoginBusiness:
-    def __init__(self, driver):
-        self.qq_login_handle = QQLoginHandle(driver)
+    def __init__(self):
+        self.qq_login_handle = QQLoginHandle()
 
     # 操作登录界面的元素
     def login_pass(self):

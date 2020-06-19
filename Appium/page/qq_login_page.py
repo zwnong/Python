@@ -5,8 +5,10 @@ from base.base_driver import Driver
 
 # 元素层
 class QQLoginPage:
-    def __init__(self, driver):
-        self.get_element_by_ini = GetElementByIni(driver)
+    def __init__(self):
+        base_driver = Driver()
+        self.driver = base_driver.android_driver()
+        self.get_element_by_ini = GetElementByIni(self.driver)
 
     # 登录页面的所以元素
     def get_username_element(self):
