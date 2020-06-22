@@ -22,3 +22,24 @@ class QqGoLoginPage:
         :return:
         """
         return self.get_element_by_ini.get_element('btn_register')
+
+    def get_username_element(self):
+        """
+        获取用户名元素
+        :return:
+        """
+        return self.get_element_by_ini.get_element('username')
+
+    def get_password_element(self):
+        """
+        获取密码元素
+        :return:
+        """
+        return self.get_element_by_ini.get_element('password')
+
+    def get_login_btn(self):
+        """
+        点击登录按钮
+        :return:
+        """
+        return self.get_element_by_ini.get_element('loginbtn')

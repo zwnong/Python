@@ -9,4 +9,8 @@
 
 # 结果输出
 class HtmlOutputer:
-    pass
+    def collect_data(self, new_data):
+        pass
+
+    def output_html(self):
+        pass

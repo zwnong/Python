@@ -2,30 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ADBKeyBoard.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The_Zen_of_Python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/qq_go_login_business.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handle/qq_go_login_handle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/qq_go_login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LvmamaXmlKit.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Readme.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uiautomatorviewer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reptile/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reptile/main/yuansu_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reptile/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reptile/util/url_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/qq_login_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/qq_login_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/qq_go_login_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/qq_go_login_business.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/qq_login_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/qq_login_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/startAppium.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/startAppium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Element.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/Element.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/qq_login_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/qq_login_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/qq_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/qq_login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/qq_go_login_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/qq_go_login_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/qq_go_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/qq_go_login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/get_element_by_ini.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_element_by_ini.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/port.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sever.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/sever.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/swip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UiAutomator2/case/double_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/../UiAutomator2/case/double_click.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UiAutomator2/case/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../UiAutomator2/case/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reptile/html_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reptile/html_downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reptile/html_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reptile/html_output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reptile/html_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reptile/html_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reptile/spider_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reptile/spider_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="E:/Python-100-Days" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -85,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="The_Zen_of_Python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="base_driver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +85,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/The_Zen_of_Python.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/base_driver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="port" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_element_by_ini" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/port.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/get_element_by_ini.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,7 +140,49 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sever" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="qq_go_login_business" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Appium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/business/qq_go_login_business.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qq_go_login_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Appium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/page" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/page/qq_go_login_page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_init" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Appium" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +194,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/sever.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/read_init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,18 +241,22 @@
     </configuration>
     <list>
       <item itemvalue="Python.HTMLTestRunner" />
-      <item itemvalue="Python.The_Zen_of_Python" />
       <item itemvalue="Python.dos_cmd" />
-      <item itemvalue="Python.port" />
-      <item itemvalue="Python.sever" />
       <item itemvalue="Python.startAppium" />
       <item itemvalue="Python tests.Unittests in qq_login_case.py" />
+      <item itemvalue="Python.base_driver" />
+      <item itemvalue="Python.qq_go_login_business" />
+      <item itemvalue="Python.get_element_by_ini" />
+      <item itemvalue="Python.qq_go_login_page" />
+      <item itemvalue="Python.read_init" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.The_Zen_of_Python" />
-        <item itemvalue="Python.sever" />
-        <item itemvalue="Python.port" />
+        <item itemvalue="Python.qq_go_login_page" />
+        <item itemvalue="Python.qq_go_login_business" />
+        <item itemvalue="Python.get_element_by_ini" />
+        <item itemvalue="Python.read_init" />
+        <item itemvalue="Python.base_driver" />
       </list>
     </recent_temporary>
   </component>
@@ -259,38 +297,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591630547940" />
-    <state width="1824" height="73" key="GridCell.Tab.0.bottom" timestamp="1591265525111">
+    <state width="1841" height="223" key="GridCell.Tab.0.bottom" timestamp="1592820495597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1824" height="73" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591265525111" />
-    <state width="1824" height="73" key="GridCell.Tab.0.center" timestamp="1591265525111">
+    <state width="1841" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592820495597" />
+    <state width="1841" height="223" key="GridCell.Tab.0.center" timestamp="1592820495597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1824" height="73" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591265525111" />
-    <state width="1824" height="73" key="GridCell.Tab.0.left" timestamp="1591265525111">
+    <state width="1841" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592820495597" />
+    <state width="1841" height="223" key="GridCell.Tab.0.left" timestamp="1592820495597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1824" height="73" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591265525111" />
-    <state width="1824" height="73" key="GridCell.Tab.0.right" timestamp="1591265525111">
+    <state width="1841" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592820495597" />
+    <state width="1841" height="223" key="GridCell.Tab.0.right" timestamp="1592820495597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1824" height="73" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591265525111" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1590745266413">
+    <state width="1841" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592820495597" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1592796090615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590745266413" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1590745266412">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592796090615" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1592796090615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590745266412" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1590745266412">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592796090615" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1592796090615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590745266412" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1590745266412">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592796090615" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1592796090615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590745266412" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592796090615" />
     <state x="794" y="230" key="RollbackChangesDialog" timestamp="1591628930300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

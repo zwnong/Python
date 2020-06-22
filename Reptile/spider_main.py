@@ -1,6 +1,4 @@
 # coding = utf-8
-import requests
-from bs4 import BeautifulSoup
 
 import html_output
 import html_parser
@@ -41,8 +39,8 @@ class SpiderMain:
                 # 启动下载器下载页面将结果存储
                 html_cont = self.downloader.download(new_url)
                 # 解析页面 得到新的数据 新的url列表
-                new_data = self.parser.parser(new_url)
-                new_urls = self.parser.parser(html_cont)
+                new_data = self.parser.parse(new_url)
+                new_urls = self.parser.parse(html_cont)
                 # 添加url进url管理器
                 self.urls.add_new_urls(new_urls)
                 # 收集数据

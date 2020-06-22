@@ -9,5 +9,5 @@
 
 # html解析器
 class HtmlPaeser:
-    def parser(self, new_url):
+    def parse(self, new_url):
         pass

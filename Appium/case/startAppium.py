@@ -1,7 +1,9 @@
 # coding = utf-8
 from base.base_driver import Driver
-from util.get_element_by_ini import GetElementByIni
 from selenium.webdriver.support.ui import WebDriverWait
+from util.get_element_by_ini import GetElementByIni
+from page.qq_go_login_page import QqGoLoginPage
+from handle.qq_go_login_handle import QqGoLoginHandle
 
 
 def get_driver():
@@ -72,13 +74,14 @@ def go_login():
     ——ignored_exceptions：超时后的异常信息，默认情况下抛 NoSuchElementException 异常
     :return:
     """
-
-    WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_id('com.tencent.mobileqq:id/btn_login')).click()
+    page = QqGoLoginHandle()
+    page.click_go_login_btn()
+    # WebDriverWait(driver, 3, 1).until(lambda x: x.find_element_by_id(go_login_e)).click()
     # driver.find_element_by_id('com.tencent.mobileqq:id/btn_login').click()
 
 
 # 登录页面 id定位 输入账号密码(qq用户名没有id定位用class定位)
-def login_by_class():
+def login():
     WebDriverWait(driver, 3, 1).until(
         lambda driver: driver.find_element_by_xpath("//android.widget.EditText[@text='QQ号/手机号/邮箱' and @content-desc='请输入QQ号码或手机或邮箱']")).send_keys(
         '849130403')
@@ -86,16 +89,6 @@ def login_by_class():
     WebDriverWait(driver, 3, 1).until(lambda driver: driver.find_element_by_id('com.tencent.mobileqq:id/login')).click()
 
 
-def send_key_kuasou():
-    file_path = r'./text.txt'
-    with open(file_path, 'r+') as f:
-        for i in f:
-            text = f.readline()
-            driver.find_element_by_xpath(
-                "//android.widget.EditText[@resource-id='com.smile.gifmaker:id/live_gzone_voice_text' and @text='说点什么...']").send_keys(text)
-
-
 driver = get_driver()
-# go_login()
-# login_by_class()
-send_key_kuasou()
+go_login()
+# login()
