@@ -1,6 +1,6 @@
 # coding = utf-8
 # 线程
-import threading
+import threadings
 
 
 def sum(a):
@@ -11,7 +11,7 @@ threads = []
 for i in range(3):
     # print(i)
     # 创建线程
-    t = threading.Thread(target=sum, args=(i,))
+    t = threadings.Thread(target=sum, args=(i,))
     # 添加到list
     threads.append(t)
 for j in threads:

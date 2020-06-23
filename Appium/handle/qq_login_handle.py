@@ -5,8 +5,8 @@ from page.qq_login_page import QQLoginPage
 # 操作层
 class QQLoginHandle:
     # 对page页面元素的操作
-    def __init__(self):
-        self.qq_login_page = QQLoginPage()
+    def __init__(self, i):
+        self.qq_login_page = QQLoginPage(i)
 
     # 输入用户名
     def send_username(self, user):
@@ -18,4 +18,4 @@ class QQLoginHandle:
 
     # 点击登录按钮
     def click_loginbtn(self):
-        self.qq_login_page.get_login_btn_element().click()
+        self.qq_login_page.get_login_btn().click()
