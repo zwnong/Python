@@ -2,13 +2,11 @@
 from base.base_driver import Driver
 from selenium.webdriver.support.ui import WebDriverWait
 from util.get_element_by_ini import GetElementByIni
-from page.qq_go_login_page import QqGoLoginPage
-from handle.qq_go_login_handle import QqGoLoginHandle
 
 
 def get_driver():
     driver = Driver()
-    return driver.android_driver()
+    return driver.android_driver(0)
 
 
 # 获取屏幕分辨率
@@ -74,8 +72,6 @@ def go_login():
     ——ignored_exceptions：超时后的异常信息，默认情况下抛 NoSuchElementException 异常
     :return:
     """
-    page = QqGoLoginHandle()
-    page.click_go_login_btn()
     # WebDriverWait(driver, 3, 1).until(lambda x: x.find_element_by_id(go_login_e)).click()
     # driver.find_element_by_id('com.tencent.mobileqq:id/btn_login').click()
 

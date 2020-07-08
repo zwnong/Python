@@ -45,4 +45,4 @@ if __name__ == '__main__':
     dos = Port()
     li = [1, 2, 3, 4, 5]
     print(dos.port_is_used('4700'))
-    print(dos.create_port_list(4699, li))
+    print(dos.create_port_list(4700, li))

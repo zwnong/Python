@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告如下</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-06-23 17:37:30</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:22.105379</p>
-<p class='attribute'><strong>Status:</strong> Pass 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-06-26 15:32:49</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:43.077767</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Error 1</p>
 
 <p class='description'>详细</p>
 </div>
@@ -221,12 +221,12 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='errorClass'>
     <td>__mp_main__.QqLoginCase</td>
     <td>2</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
@@ -254,22 +254,52 @@ pt1.1:
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_02</div></td>
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_02</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
 
-    <div id='div_pt1.2' class="popup_window">
+    <div id='div_ft1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.2: 
+ft1.2: Traceback (most recent call last):
+  File "E:\github\Python\Appium\case\qq_login_case.py", line 45, in test_02
+    self.qq_login.login_pass()
+  File "E:\github\Python\Appium\business\qq_login_business.py", line 21, in login_pass
+    self.qq_login_handle.click_login_fail_promptBtn()
+  File "E:\github\Python\Appium\handle\qq_login_handle.py", line 68, in click_login_fail_promptBtn
+    return self.qq_login_page.login_fail_promptBtn().click()
+  File "E:\github\Python\Appium\page\qq_login_page.py", line 68, in login_fail_promptBtn
+    return self.get_element_by_ini.get_element('promptBtn')
+  File "E:\github\Python\Appium\util\get_element_by_ini.py", line 32, in get_element
+    return WebDriverWait(self.driver, 3, 1).until(lambda x: x.find_element_by_xpath(right_value))
+  File "E:\Python\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "E:\github\Python\Appium\case\qq_login_case.py", line 45, in test_02
+    self.qq_login.login_pass()
+  File "E:\github\Python\Appium\business\qq_login_business.py", line 21, in login_pass
+    self.qq_login_handle.click_login_fail_promptBtn()
+  File "E:\github\Python\Appium\handle\qq_login_handle.py", line 68, in click_login_fail_promptBtn
+    return self.qq_login_page.login_fail_promptBtn().click()
+  File "E:\github\Python\Appium\page\qq_login_page.py", line 68, in login_fail_promptBtn
+    return self.get_element_by_ini.get_element('promptBtn')
+  File "E:\github\Python\Appium\util\get_element_by_ini.py", line 32, in get_element
+    return WebDriverWait(self.driver, 3, 1).until(lambda x: x.find_element_by_xpath(right_value))
+  File "E:\Python\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
 
         </pre>
     </div>
@@ -281,9 +311,9 @@ pt1.2:
 <tr id='total_row'>
     <td>Total</td>
     <td>2</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

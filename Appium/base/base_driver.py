@@ -24,6 +24,9 @@ class Driver:
         time.sleep(5)
         return driver
 
+    def quit_driver(self, i):
+        self.android_driver(i).quit()
+
     def ios_driver(self):
         pass
 

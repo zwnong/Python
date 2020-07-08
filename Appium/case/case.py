@@ -1,55 +1,59 @@
 # coding = utf-8
+"""
+@project: applets
+@author: ZWNONG
+@file: swipe_view.py
+@time: 2020-06-29 22:57:44
+"""
+# coding = utf-8
 import HTMLTestRunner
 import time
 import unittest
 from appium import webdriver
 
 
-class TestCase(unittest.TestCase):
+class SwipeViewYouCheYouHuo(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        pass
+        capabilities = {
+            'platformName': 'Android',
+            'fastReset': 'false',
+            'deviceName': '127.0.0.1:21503',
+            'appPackage': 'com.tencent.mm',
+            'appActivity': '.ui.LauncherUI',
+            'fullReset': 'false',
+            'unicodeKeyboard': 'True',
+            'resetKeyboard': 'True',
+            'chromeOptions': {
+                'androidProcess': 'com.tencent.mm:appbrand0'
+            }
+        }
+        cls.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
+        time.sleep(6)
+        return cls.driver
 
     def setUp(self):
-        # 如果设置的是app包的路径，则不需要配appPackage和appActivity，同理反之
-        capabilities = {
-            "platformName": "Android",
-            # "automationName": "UiAutomator2",
-            "deviceName": "127.0.0.1:21503",
-            # "deviceName": "d1336851",
-            "app": r"E:\APK\meizustore.apk",
-            "appWaitActivity": "com.meizu.store.newhome.NewHomeActivity",
-            "noReset": "True"
-        }
-        self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", capabilities)
-        time.sleep(6)
-        return self.driver
+        pass
 
     def tearDown(self):
-        self.driver.quit()
+        pass
 
     def test_01(self):
-        self.driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.flyme.meizu.store:id/nav_title").text("我的")').click()
-        time.sleep(1)
-        self.driver.find_element_by_android_uiautomator(
-            'new UiSelector().resourceId("com.flyme.meizu.store:id/person_item_describe").text("未登陆")').click()
-        time.sleep(5)
+        self.driver.find_element_by_xpath()
 
     @staticmethod
     def case_suite():
         suite = unittest.TestSuite()
-        suite.addTest(TestCase("test_01"))
+        suite.addTest(SwipeViewYouCheYouHuo("test_01"))
         # 获取当前时间
         now = time.strftime("%Y-%m-%M-%H_%M_%S", time.localtime(time.time()))
-        # runner = unittest.TextTestRunner()
-        # runner.run(suite)
         runner = HTMLTestRunner.HTMLTestRunner()
-        file_path = r'E:\github\Python\Appium\report\report' + now + '.html'
+        file_path = r'E:\github\Python\applets\report' + now + '.html'
         with open(file_path, 'wb') as f:
             HTMLTestRunner.HTMLTestRunner(stream=f, title='测试报告', description='描述:').run(suite)
 
 
 if __name__ == '__main__':
-    run = TestCase()
+    run = SwipeViewYouCheYouHuo()
     run.case_suite()

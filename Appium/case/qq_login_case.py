@@ -5,9 +5,10 @@ import multiprocessing
 import time
 import unittest
 import HTMLTestRunner
+from base.base_driver import Driver
 from util.sever import Server
 from util.write_user_command import WriteUserCommand
-from business.qq_go_login_business import QqGoLoginBusiness
+from business.qq_login_business import QQLoginBusiness
 
 
 class ParameTestCase(unittest.TestCase):
@@ -20,12 +21,14 @@ class ParameTestCase(unittest.TestCase):
 class QqLoginCase(ParameTestCase):
     @classmethod
     def setUpClass(cls):
-        cls.login = QqGoLoginBusiness(parames)
+        cls.qq_login = QQLoginBusiness(parames)
 
         print('this is setupclass', parames)
 
     @classmethod
     def tearDownClass(cls):
+        base_driver = Driver()
+        base_driver.quit_driver(parames)
         print('this is teardowmclass')
 
     def setUp(self):
@@ -35,11 +38,16 @@ class QqLoginCase(ParameTestCase):
         print('this is teardowm')
 
     def test_01(self):
-        self.login.go_login()
+        self.qq_login.go_login()
         print('this is case01', parames)
 
     def test_02(self):
-        print('this is case02')
+        self.qq_login.login_pass()
+        print('this is loginpass')
+
+    def test_03(self):
+        self.qq_login.login_fail()
+        print("this is loginfail")
 
 
 def get_count():
