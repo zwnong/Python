@@ -3,26 +3,24 @@
 @project: Reptile
 @author: ZWNONG
 @file: app_windows.py
-@time: 2020-07-07 09:50:09
+@time: 2020-07-10 09:50:09
 """
-# 窗体实现
 import os
-
 import PIL  # 图像处理模块
 import numpy
-import time
 import threading
 import matplotlib.pyplot as plt  # 画图模块
 from matplotlib.widgets import Button  # 按钮模块
 import warnings  # 屏蔽广告
 
 
+# 微信 跳一跳 辅助工具
 class RunMain:
     def __init__(self):
-        self.figure = plt.figure()  # 创建一个空白的图形对象
-        self.coor = []  # 保存选择位置的坐标
-        self.ax = None  # 子视图变量
-        self.isAuto = False  # 标记是否启动了自动模式
+        self.figure = plt.figure()
+        self.coor = []
+        self.ax = None
+        self.isAuto = False
 
     def get_scr_image(self):
         os.system('adb shell screencap -p /sdcard/screen.png')
@@ -37,7 +35,7 @@ class RunMain:
         :param event:
         :return:
         """
-        if self.isAuto is False:  # 判断在买要启动自动跳跃时
+        if self.isAuto is False:  # 判断是否启动自动跳跃时
             if event.xdata is not None and event.xdata is not None:  # 判断获取的坐标点是否为空
                 # 获取点击的坐标点并转换为float
                 x = float(event.xdata)
@@ -52,7 +50,7 @@ class RunMain:
                     self.ax = self.figure.add_subplot(1, 1, 1)  # 添加一个子图，也就是绘制我们选择的点
                     self.ax.plot(x, y, 'r*')  # 绘制红色的*号
                     self.figure.canvas.draw()  # 重画
-                    # 如果coor 列表长度等于2时，将起始位置和终点位置的坐标点传递过去，然后情况坐标点
+                    # 如果coor 列表长度等于2时，将起始位置和终点位置的坐标点传递过去
                     if len(self.coor) == 2:
                         # 调用计算方法，将起始位置和终点位置的坐标点传递过去，然后情况坐标点
                         self.jump_to_next(self.coor.pop())

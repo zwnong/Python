@@ -21,11 +21,12 @@ def doubleClick():
     :return:
     
     """
+    print("running...")
 
     while True:
         try:
-            device.double_click(int(x) / 10 * 9.2, int(y) / 10 * 8, 0.2)
-
+            device.double_click(int(x) / 10 * 9.2, int(y) / 10 * 7, 0.2)
+            time.sleep(0.16)
         except EOFError:
             print('fail')
 
