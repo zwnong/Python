@@ -1,4 +1,4 @@
-# Define here the models for your spider middleware
+# Define here the models for your Spider middleware
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
@@ -11,7 +11,7 @@ from itemadapter import is_item, ItemAdapter
 
 class SpiderSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
-    # scrapy acts as if the spider middleware does not modify the
+    # scrapy acts as if the Spider middleware does not modify the
     # passed objects.
 
     @classmethod
@@ -22,8 +22,8 @@ class SpiderSpiderMiddleware:
         return s
 
     def process_spider_input(self, response, spider):
-        # Called for each response that goes through the spider
-        # middleware and into the spider.
+        # Called for each response that goes through the Spider
+        # middleware and into the Spider.
 
         # Should return None or raise an exception.
         return None
@@ -37,14 +37,14 @@ class SpiderSpiderMiddleware:
             yield i
 
     def process_spider_exception(self, response, exception, spider):
-        # Called when a spider or process_spider_input() method
-        # (from other spider middleware) raises an exception.
+        # Called when a Spider or process_spider_input() method
+        # (from other Spider middleware) raises an exception.
 
         # Should return either None or an iterable of Request or item objects.
         pass
 
     def process_start_requests(self, start_requests, spider):
-        # Called with the start requests of the spider, and works
+        # Called with the start requests of the Spider, and works
         # similarly to the process_spider_output() method, except
         # that it doesn’t have a response associated.
 
