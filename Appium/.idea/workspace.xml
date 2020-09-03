@@ -2,89 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d235001-5cc9-4d61-a99a-8d16cdd5a819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/keywords/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/Django.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Selenium/自动化/51job.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Selenium/自动化/dome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Selenium/自动化/前程无忧.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spider/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spider/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spider/REMADE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spider/楠楠广场舞/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spider/爬虫破解付费电影下载/crack_vip_video.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy/.idea/scrapy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/.idea/办公自动化.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/Jmeter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/Jmeter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/办公自动化/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自动化/办公自动化/阅卷系统.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/requests/mysql/select_mysql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/新建文本文档.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/Reptile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/.idea/Reptile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/html_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/html_downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/html_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/html_output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/html_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/html_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/picture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/spider_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/spider_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/demo/url_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/demo/url_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/main/yuansu_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/main/yuansu_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/util/url_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/util/url_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/人脸识别系统/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/人脸识别系统/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/微信跳一跳辅助工具/app_windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/微信跳一跳辅助工具/app_windows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/微信跳一跳辅助工具/image/auto.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/微信跳一跳辅助工具/image/auto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/微信跳一跳辅助工具/image/reelect.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/微信跳一跳辅助工具/image/reelect.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/微信跳一跳辅助工具/image/screencap/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/微信跳一跳辅助工具/image/screencap/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/摄像头窃取工具/get_camera_photos.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/摄像头窃取工具/get_camera_photos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/摄像头窃取工具/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/摄像头窃取工具/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬取今天头条搞笑类目/today's headlines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/爬取今天头条搞笑类目/today's headlines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬取图片/get_xiongmaobangong.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/爬取图片/get_xiongmaobangong.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬虫破解付费电影下载/crack_vip_video.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬虫破解付费电影下载/ffmpeg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/爬虫破解付费电影下载/ffmpeg.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬虫破解付费音乐下载/crack_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/爬虫破解付费音乐下载/crack_music.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/爬虫破解付费音乐下载/这个年纪.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/爬虫破解付费音乐下载/这个年纪.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/Recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/Recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/lesson.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/lesson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/love.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/love.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/marry.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/marry.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/music_v2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/music_v2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/rose.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/rose.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reptile/语音控制电脑/voice_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/语音控制电脑/voice_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy/spider/spider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy/spider/spider/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy/spider/spider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy/spider/spider/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy/spider/spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy/spider/spider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/Django.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/钓鱼网站/钓鱼网站/wsgi.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +48,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interface" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -243,18 +177,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593151825133" />
-    <state x="703" y="145" key="#port" timestamp="1585396027501">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="703" y="145" key="#port/0.0.1920.1040@0.0.1920.1040" timestamp="1585396027501" />
     <state x="668" y="145" key="#sever" timestamp="1592894221533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="145" key="#sever/0.0.1920.1040@0.0.1920.1040" timestamp="1592894221533" />
-    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1593843439024">
+    <state x="626" y="260" key="FileChooserDialogImpl" timestamp="1598154132803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593843439024" />
+    <state x="626" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598154132803" />
     <state width="1899" height="208" key="GridCell.Tab.0.bottom" timestamp="1593580551734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -295,10 +225,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="395" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591255044730" />
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1593843349891">
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1598153903578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593843349891" />
+    <state x="543" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598153903578" />
     <state x="886" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1593573792933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
