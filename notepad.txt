@@ -80,7 +80,6 @@ set "filename=%YYYYmmdd%HH%hhmiss%.rar"
 echo %filename%
 pause 
  
-
 连接特定的 DNS 后缀: meizu.com
 描述: Intel(R) Ethernet Connection I217-LM
 物理地址: ?64-00-6A-76-D7-AB
@@ -98,7 +97,7 @@ IPv4 WINS 服务器: 172.16.1.122, 172.16.1.121
 IPv6 默认网关: 
 IPv6 DNS 服务器: 
 
-
+接口地址：https://httpbin.ceshiren.com/#/
 
 PLMN
 Public Land Mobile Network -- 公共陆地移动(通信)网络 
@@ -947,7 +946,7 @@ NFC即近场通信（Near Field Communication），是一种短距离的高频无线通信技术，
 利用移动终端实现移动支付、电子票务、门禁、移动身份识别、防伪等应用。
 
 pyinstaller --onefile --windowed --icon="路径" app.py
-pip --default-timeout=100 install 
+pip --default-timeout=1000 install 
 
 
 18377183873

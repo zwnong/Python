@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f452fb07-7a77-4101-b966-4a1ae1a5466a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Interface/requests/mysql/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Interface/requests/mysql/select_mysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Interface/新建文本文档.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_project/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_project/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_project/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_project/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Appium/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Appium/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/Django.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Django/钓鱼网站/钓鱼网站/wsgi.py" beforeDir="false" />
-    </list>
+    <list default="true" id="f452fb07-7a77-4101-b966-4a1ae1a5466a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +21,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python_100_day_master" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -80,5 +35,15 @@
       <updated>1598847751032</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="868" y="219" key="FileChooserDialogImpl" timestamp="1599117706626">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="868" y="219" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599117706626" />
+    <state x="640" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1599117668421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="341" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599117668421" />
   </component>
 </project>
