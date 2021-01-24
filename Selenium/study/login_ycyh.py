@@ -31,11 +31,15 @@ class LoginYCYH(unittest.TestCase):
         self.driver.quit()
 
     def test_01(self):
-        WebDriverWait(self.driver, 3, 1).until(lambda x: x.find_element_by_xpath('//*[@id="nav114"]/div/a/span[1]')).click()
-        WebDriverWait(self.driver, 3, 1).until(lambda x: x.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div['
-                                                                                 '2]/div/div[1]/input')).send_keys('123456')
-        self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div[4]/div/div[1]/input').send_keys('abd123')
-        self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div[6]/div/button/span').click()
+        WebDriverWait(self.driver, 3, 1).until(
+            lambda x: x.find_element_by_xpath('//*[@id="nav114"]/div/a/span[1]')).click()
+        WebDriverWait(self.driver, 3, 1).until(
+            lambda x: x.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div['
+                                              '2]/div/div[1]/input')).send_keys('123456')
+        self.driver.find_element_by_xpath(
+            '//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div[4]/div/div[1]/input').send_keys('abd123')
+        self.driver.find_element_by_xpath(
+            '//*[@id="app"]/div/div[1]/div[2]/div[2]/div[2]/div/form/div[6]/div/button/span').click()
         time.sleep(20)
 
 
