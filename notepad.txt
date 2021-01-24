@@ -1285,7 +1285,8 @@ History中+top/-top:    应用到前台，和退到后台
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 托管到GitHub步骤：
-
+   
+   初始化仓库 git init
 1、在github上创建项目
 
 2、使用git clone https://github.com/zwnong/Python.git克隆到本地
