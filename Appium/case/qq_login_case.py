@@ -1,7 +1,10 @@
 # coding = utf-8
-import threading
 # 进程
 import multiprocessing
+import os
+import sys
+
+sys.path.append(os.getcwd())
 import time
 import unittest
 import HTMLTestRunner

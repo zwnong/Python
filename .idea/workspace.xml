@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c7f5b97-53af-4815-b720-ecdefe32b9af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Appium/page/flyme_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/page/flyme_login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Appium/case/_trial_temp/_trial_marker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Appium/case/_trial_temp/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appium/business/qq_login_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/business/qq_login_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appium/case/qq_login_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/case/qq_login_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appium/case/test_threading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/case/test_threading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appium/config/usercofig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/config/usercofig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Appium/handle/qq_login_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/handle/qq_login_handle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,7 +36,108 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Appium" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Python" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Python" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.monkey">
+    <configuration name="HTMLTestrunner" type="PythonConfigurationType" factoryName="Python">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium/case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/case/qq_login_case.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_package" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tkinter/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tkinter/tools/get_package.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="monkey" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tkinter/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tkinter/tools/monkey.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial for qq_login_case.QqLoginCase" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;qq_login_case.QqLoginCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.HTMLTestrunner" />
+      <item itemvalue="Python.get_package" />
+      <item itemvalue="Python.monkey" />
+      <item itemvalue="Python tests.Twisted Trial for qq_login_case.QqLoginCase" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.monkey" />
+        <item itemvalue="Python.get_package" />
+        <item itemvalue="Python tests.Twisted Trial for qq_login_case.QqLoginCase" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,13 +165,64 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="761" y="238" key="FileChooserDialogImpl" timestamp="1583751439141">
+    <state x="509" y="278" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611493574881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="761" y="238" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583751439141" />
-    <state x="682" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1583751268226">
+    <state x="509" y="278" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611493574881" />
+    <state x="851" y="420" key="FileChooserDialogImpl" timestamp="1611572951479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="328" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583751268226" />
+    <state x="851" y="420" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611572951479" />
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1611496962044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962044" />
+    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1611496962044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962044" />
+    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1611496962044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962044" />
+    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1611496962044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962044" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1611496962045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962045" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1611496962045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962045" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1611496962045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962045" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1611496962045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611496962045" />
+    <state x="895" y="205" key="SettingsEditor" timestamp="1611496583519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="895" y="205" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611496583519" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1611572923852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611572923852" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

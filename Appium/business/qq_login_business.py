@@ -1,4 +1,7 @@
 # coding = utf-8
+import sys
+
+sys.path.append(r'E:\github\Python\Appium')
 from handle.qq_login_handle import QQLoginHandle
 
 
