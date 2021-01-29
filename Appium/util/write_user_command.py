@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Appium
+@All-project: Appium
 @author: ZWNONG
 @file: write_user_command.py
 @time: 2020-06-22 19:07:45

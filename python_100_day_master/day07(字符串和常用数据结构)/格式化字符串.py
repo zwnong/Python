@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: python_100_day_master
+@All-project: python_100_day_master
 @author: ZWNONG
 @file: 格式化字符串.py
 @time: 2020-09-06 14:57:55

@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: python_100_day_master
+@All-project: python_100_day_master
 @author: ZWNONG
 @file: 素数.py
 @time: 2020-09-04 22:42:32

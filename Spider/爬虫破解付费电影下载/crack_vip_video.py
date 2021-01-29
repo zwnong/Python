@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: crack_vip_video.py
 @time: 2020-07-04 14:17:57

@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: applets
+@All-project: applets
 @author: ZWNONG
 @file: swipe_view.py
 @time: 2020-06-29 22:57:44

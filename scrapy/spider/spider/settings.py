@@ -1,4 +1,4 @@
-# Scrapy settings for Spider project
+# Scrapy settings for Spider All-project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:

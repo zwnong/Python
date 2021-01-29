@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Interface
+@All-project: Interface
 @author: ZWNONG
 @file: select_mysql.py
 @time: 2020-08-29 14:26:10

@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: python_100_day_master
+@All-project: python_100_day_master
 @author: ZWNONG
 @file: 字符串常用操作.py
 @time: 2020-09-03 15:56:38

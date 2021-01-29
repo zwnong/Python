@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Study
+@All-project: Study
 @author: ZWNONG
 @file: 生成二维码.py
 @time: 2020-09-23 20:28:50

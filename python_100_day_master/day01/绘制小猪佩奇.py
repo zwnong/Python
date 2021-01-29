@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: python_100_day_master
+@All-project: python_100_day_master
 @author: ZWNONG
 @file: 绘制小猪佩奇.py
 @time: 2020-09-03 15:31:54

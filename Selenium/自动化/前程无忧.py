@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Selenium
+@All-project: Selenium
 @author: ZWNONG
 @file: 前程无忧.py
 @time: 2020-08-03 20:26:58

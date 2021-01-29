@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Study
+@All-project: Study
 @author: ZWNONG
 @file: 设计个性签名.py
 @time: 2020-09-26 20:33:27

@@ -5,7 +5,7 @@ import html_parser
 import url_manager
 
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: spider_main.py
 @time: 2020-06-19 12:07:02

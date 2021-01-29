@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Appium
+@All-project: Appium
 @author: ZWNONG
 @file: parame_test_case.py
 @time: 2020-06-23 15:39:13

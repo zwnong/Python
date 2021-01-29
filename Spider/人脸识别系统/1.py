@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: 1.py
 @time: 2020-07-18 19:48:02

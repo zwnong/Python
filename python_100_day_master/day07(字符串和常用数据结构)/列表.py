@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: python_100_day_master
+@All-project: python_100_day_master
 @author: ZWNONG
 @file: 列表.py
 @time: 2020-09-06 15:39:42

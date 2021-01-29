@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: get_xiongmaobangong.py
 @time: 2020-07-07 10:22:15

@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: today's headlines.py
 @time: 2020-07-09 14:16:36

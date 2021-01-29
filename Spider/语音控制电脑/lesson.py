@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: lesson.py
 @time: 2020-07-08 20:19:54

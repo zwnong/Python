@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Appium
+@All-project: Appium
 @author: ZWNONG
 @file: run_main.py
 @time: 2020-07-01 12:59:28

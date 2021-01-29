@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: get_camera_photos.py
 @time: 2020-07-17 20:15:22

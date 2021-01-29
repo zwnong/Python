@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: github
+@All-project: github
 @author: ZWNONG
 @file: download.py
 @time: 2020-08-13 11:11:27

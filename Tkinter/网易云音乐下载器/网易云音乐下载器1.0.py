@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Tkinter
+@All-project: Tkinter
 @author: ZWNONG
 @file: 网易云音乐下载器1.0.py
 @time: 2020-10-13 22:26:46

@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Selenium
+@All-project: Selenium
 @author: ZWNONG
 @file: dome.py
 @time: 2020-08-03 23:18:01

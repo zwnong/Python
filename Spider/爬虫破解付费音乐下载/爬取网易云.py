@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Spider
+@All-project: Spider
 @author: ZWNONG
 @file: 爬取网易云.py
 @time: 2020-10-13 19:56:56

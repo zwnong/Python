@@ -1,5 +1,5 @@
 """
-WSGI config for web_project project.
+WSGI config for web_project All-project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

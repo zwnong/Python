@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: Web
+@All-project: Web
 @author: ZWNONG
 @file: urls.py
 @time: 2020-08-31 12:10:15

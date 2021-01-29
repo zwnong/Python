@@ -1,6 +1,6 @@
 # coding = utf-8
 """
-@project: scrapy
+@All-project: scrapy
 @author: ZWNONG
 @file: items.py
 @time: 2020-07-25 22:16:20
