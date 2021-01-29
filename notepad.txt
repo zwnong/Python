@@ -1335,6 +1335,19 @@ GitHub远程仓库中的README.md文件不在本地仓库中。
 $ git pull --rebase origin master
 $ git push -u origin master
 
+error: failed to push some refs to 'https://github.com/CrazyDony/text.git'
+
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+原因：
+自己分支版本低于主版本
+
+使用：git push -u origin master -f
+
 
 原文链接：https://blog.csdn.net/u011471873/article/details/51462871
 
