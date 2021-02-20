@@ -1796,6 +1796,7 @@ url = 'http://www.sogou.com/'
 driver.get(url)
 
 
+pycharm ÇÐ»» python3.9 ±¨´í ¡®HTMLParser¡® object has no attribute ¡®unescape¡® ½â¾ö   https://blog.csdn.net/pythontide/article/details/109316457
 
 
 
