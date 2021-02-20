@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c7f5b97-53af-4815-b720-ecdefe32b9af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Appium/case/_trial_temp/_trial_marker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Appium/case/_trial_temp/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appium/business/qq_login_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/business/qq_login_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appium/case/qq_login_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/case/qq_login_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appium/case/test_threading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/case/test_threading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appium/config/usercofig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/config/usercofig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Appium/handle/qq_login_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Appium/handle/qq_login_handle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_pnganduix.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hogsarts_zwnong..bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/push公开git内容.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/push私有hogwarts内容.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uiautomatorviewer.bat.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/获取当前包名activity.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/连接逍遥游模拟器.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
