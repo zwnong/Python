@@ -5,7 +5,6 @@
 @file: swipe_view.py
 @time: 2020-06-29 22:57:44
 """
-# coding = utf-8
 import HTMLTestRunner
 import time
 import unittest
